@@ -2,48 +2,443 @@
   "schema_version": 1,
   "role_id": "agentic-systems-architect",
   "title": "Agentic Systems Architect",
-  "generated_at": "2026-06-14",
-  "postings_sampled": 1,
-  "notes": "Seeded from the verbatim Imagine Learning posting (the posting that motivated this role). This is a single, high-signal posting; the nightly research cycle should broaden to >=25 postings and recompute frequencies. Every requirement below is mapped to a curriculum module in curriculum-plan.json. See JOB_REQUIREMENTS.md for the readable traceability table.",
+  "generated_at": "2026-06-15",
+  "postings_sampled": 27,
+  "postings_sampled_in_last_90_days": 22,
+  "research_window": {
+    "today": "2026-06-15",
+    "cutoff": "2026-03-17",
+    "rule": "Postings dated on or after the cutoff count toward frequency. Older postings are retained as corroborating evidence but excluded from the in-window count."
+  },
+  "notes": "Second cycle. The 2026-06-14 seed (Imagine Learning) was sharpened by 25+ additional Agentic AI/Systems Architect postings from Mar-Jun 2026. Result: the existing 10-module spine (mod-301..mod-310) and the three projects continue to cover every requirement that crosses the 0.30 frequency threshold. No new modules, exercises, or projects are warranted this cycle. See JOB_REQUIREMENTS.md for the human-readable mapping and rationale. Frequency counts in this file are computed against the 22 in-window postings only.",
+  "summary": "The market for 'Agentic Systems Architect' has matured into a recognizable archetype with three sub-flavors: (a) the consulting/SI architect (Cognizant, Capgemini, Infosys, EY, Guidehouse, NTT DATA, WGA, dentsu, Granicus) who scopes/architects agentic platforms for clients; (b) the enterprise-platform architect (84.51°/Kroger, UnitedHealth, Acquia, Experian, Vertex, Apollo, Zoom, HERE Technologies) who owns the internal agent reference architecture, registry, observability and governance; and (c) the security/governance-leaning architect (Zscaler, Imagine Learning) focused on secure agent runtimes, MCP/tool registries, OAuth/RBAC, prompt-injection defense. All three flavors converge on the same core skill set: (i) multi-agent orchestration architecture with frameworks (LangGraph/CrewAI/AutoGen/Semantic Kernel) and protocols (MCP/A2A); (ii) memory/context engineering and RAG; (iii) evaluation harnesses (offline + online, trajectory + final-state); (iv) observability/tracing (OTel GenAI, LangFuse/LangSmith/Arize); (v) secure agent execution (OAuth/RBAC, tool sandboxing, prompt-injection mitigation, MCP server/tool registries); (vi) governance and regulated-domain compliance (ISO/IEC 42001, FERPA/COPPA/HIPAA/FedRAMP-relevant patterns); (vii) durable execution and HITL; (viii) cost/latency economics; (ix) pre-sales / executive scoping & adoption. Every one of these is already a module in the existing curriculum.",
   "postings": [
     {
       "employer": "Imagine Learning",
       "title": "Agentic Systems Architect",
       "url": "https://www.edtech.com/jobs/agentic-systems-architect-9085",
-      "url_original_expired": "https://www.edtech.com/jobs/agentic-systems-architect-8511",
-      "date_posted": "2026-05-19",
-      "location": "Remote - US (offices: Tempe AZ HQ, Austin TX, Petaluma CA, Rock Rapids IA, Bloomington MN)",
-      "employment_type": "Full-Time",
-      "salary_range_usd": {"min": 153415, "max": 200000, "period": "year", "plus": "incentive/commission/annual bonus eligibility"},
-      "team": "Engineering, Tech, and IT",
-      "reports_to": "Senior Director of Engineering",
-      "travel": "up to ~25%",
-      "work_authorization": "US Person required; sponsorship not available",
+      "date_observed": "2026-05-19",
+      "location": "Remote - US (Tempe AZ HQ; Austin TX; Petaluma CA; Rock Rapids IA; Bloomington MN)",
+      "in_window": true,
+      "source_depth": "full_jd",
+      "notes": "Seed posting that motivated the role. Salary $153,415-$200,000. Charter: AI-for-SDLC plugin platform extending Claude Code (Agents/Skills/Hooks/MCP); FERPA/COPPA; security-first.",
       "corroborating_sources": [
         "https://www.ziprecruiter.com/c/Imagine-Learning/Job/Agentic-Systems-Architect",
         "https://www.indeed.com/viewjob?jk=f92ec5f5b3020dbe",
         "https://jobright.ai/jobs/info/69f230668d8d624381a9f8c6"
       ]
+    },
+    {
+      "employer": "NTT DATA Services",
+      "title": "AI Architect Director - Agentic Systems",
+      "url": "https://careers-inc.nttdata.com/job/Dallas-AI-Architect-Director-Agentic-Systems-TX-75201/1359123500/",
+      "date_observed": "2026-05-21",
+      "location": "Dallas, TX",
+      "in_window": true,
+      "source_depth": "full_jd",
+      "notes": "Salary $122,648-$170,344. 'Build LLM-powered systems (RAG, tool-calling agents, multi-agent orchestration).' Healthcare/finance verticals; HIPAA-aware architectures with auditability."
+    },
+    {
+      "employer": "Cognizant",
+      "title": "Solution Architect - Agentic AI",
+      "url": "https://careers.cognizant.com/global-en/jobs/00067763931/solution-architect-agentic-ai/",
+      "date_observed": "2026-06-11",
+      "location": "Stockholm, Sweden",
+      "in_window": true,
+      "source_depth": "full_jd",
+      "notes": "'Drive the end-to-end architecture and delivery of agentic AI solutions, orchestrating multi-agent workflows.' LangChain/AutoGen/CrewAI; AWS/Azure/GCP; AI governance, security, data privacy; consulting/facilitation."
+    },
+    {
+      "employer": "Cognizant",
+      "title": "Principal AI Architect — Agentic AI, AWS Bedrock & Broad-Spectrum AI (Remote)",
+      "url": "https://careers.cognizant.com/apj-ph/jobs/00069303232/principal-ai-architect-agentic-ai-aws-bedrock-broad-spectrum-ai-remote/",
+      "date_observed": "2026-06-11",
+      "location": "Dallas, TX (Remote)",
+      "in_window": true,
+      "source_depth": "full_jd",
+      "notes": "'Architect the foundational agent loop — perception, planning, tool selection, execution, self-reflection, and memory.' Bedrock Agents, Knowledge Bases, Guardrails, Model Evaluation; ReAct/Reflexion/Plan-and-Execute; multi-cloud AI; C-suite workshops on AI strategy and ROI."
+    },
+    {
+      "employer": "Guidehouse",
+      "title": "AI/ML Solutions Architect (Agentic Systems)",
+      "url": "https://careers.greatersatx.com/companies/guidehouse/jobs/73814191-ai-ml-solutions-architect-agentic-systems",
+      "date_observed": "2026-04-09",
+      "location": "Remote (US)",
+      "in_window": true,
+      "source_depth": "full_jd",
+      "notes": "Salary $130,000-$216,000. 'Design and implement agentic AI systems' for federal clients; Public Trust eligibility; LangChain/Haystack/crewAI; MCP servers and tool-calling; security-by-design; AWS-first."
+    },
+    {
+      "employer": "Infosys",
+      "title": "Agentic AI Architect",
+      "url": "https://builtin.com/job/agentic-ai-architect/9068422",
+      "date_observed": "2026-06-07",
+      "location": "Remote, Poland",
+      "in_window": true,
+      "source_depth": "full_jd",
+      "notes": "'8+ years of experience in AI/ML, including 5+ years as a Solution Architect and 4+ years of hands-on development with LLMs.' LangChain/LlamaIndex/Semantic Kernel/AutoGen; RFI/RFP responses; reference architectures; AI governance and responsible AI."
+    },
+    {
+      "employer": "HERE Technologies",
+      "title": "Agentic AI Domain Architect",
+      "url": "https://builtin.com/job/agentic-ai-domain-architect/9250352",
+      "date_observed": "2026-06-04",
+      "location": "3 Locations (Hybrid)",
+      "in_window": true,
+      "source_depth": "full_jd",
+      "notes": "Translate business workflows into 'agent-compatible domain workflows, decomposed into modular, reusable agent skills'; agent skills, orchestration, grounding, memory, reasoning, tool use; ERP/TMS/FSM integrations."
+    },
+    {
+      "employer": "Zoom",
+      "title": "Principal AI Architect - Agentic Verticals",
+      "url": "https://careers.zoom.us/jobs/principal-ai-architect-agentic-verticals-seattle-washington-united-states-san-jose-california",
+      "date_observed": "2026-06-12",
+      "location": "Seattle, WA / San Jose, CA (In-Office)",
+      "in_window": true,
+      "source_depth": "full_jd",
+      "notes": "Salary $206,600-$451,800. 'Architecting scalable systems leveraging large language models (LLM) and Agentic AI frameworks for production.' 10+ yrs in ML architectures; reference architectures; cross-functional initiatives."
+    },
+    {
+      "employer": "Granicus",
+      "title": "Agentic AI Architect & Value Engineer",
+      "url": "https://jobright.ai/jobs/info/6960d70ca112b402660f7483",
+      "date_observed": "2026-03-15",
+      "location": "Remote (US)",
+      "in_window": true,
+      "source_depth": "full_jd",
+      "notes": "Salary $154K-$173K. '7+ years in solution architecture, AI engineering, or enterprise consulting.' Bedrock, AgentCore, Microsoft, Vertex, MCP, LangChain; government workflows; data governance; co-innovation. Date is ~3 months ago per posting metadata; at edge of window."
+    },
+    {
+      "employer": "WGA Consulting, LLC",
+      "title": "Principal AI Agent Architect",
+      "url": "https://www.indeed.com/viewjob?jk=78000c7adfb05c6f",
+      "date_observed": "2026-05-25",
+      "location": "El Segundo, CA (Hybrid)",
+      "in_window": true,
+      "source_depth": "full_jd",
+      "notes": "Contract rate $115-$125/hr. '10+ years professional experience in consulting, enterprise AI, technology architecture, or transformation.' Executive interviews; opportunity architectures; orchestration patterns and HITL models; deliverables benchmarked against BCG/McKinsey/Bain."
+    },
+    {
+      "employer": "Experian",
+      "title": "Director, Agentic AI/Automation (Remote)",
+      "url": "https://jobs.experian.com/job/director-agentic-ai-automation-remote-in-united-states-jid-2754",
+      "date_observed": "2026-05-20",
+      "location": "United States (Remote)",
+      "in_window": true,
+      "source_depth": "full_jd",
+      "notes": "Salary $153,075-$275,535. 'Architecting a scalable agentic automation platform (multi-agent orchestration, tool use, evaluation/guardrails).' CrewAI/LangGraph; tool calling; RAG; compliance/security partnership."
+    },
+    {
+      "employer": "Zscaler",
+      "title": "Security Architect, Agentic AI",
+      "url": "https://job-boards.greenhouse.io/zscaler/jobs/5132492007",
+      "date_observed": "2026-05-15",
+      "location": "Remote - USA",
+      "in_window": true,
+      "source_depth": "full_jd",
+      "notes": "Salary $182,000-$260,000. 'Build and secure MCP servers, clients, tool registries, and connector patterns with robust authentication.' Planner/executor patterns; OWASP LLM Top 10; MITRE ATLAS; NIST AI RMF; RAG retrieval authorization."
+    },
+    {
+      "employer": "Acquia",
+      "title": "Enterprise AI Architect",
+      "url": "https://job-boards.greenhouse.io/acquia/jobs/7852641",
+      "date_observed": "2026-05-10",
+      "location": "Remote - Canada",
+      "in_window": true,
+      "source_depth": "full_jd",
+      "notes": "'Lead end-to-end delivery of AI agent implementations. Write and ship production AI code daily.' Hands-on LangGraph, Temporal, Pydantic; hands-on LangFuse for tracing/evaluation/prompt mgmt; RAG; multi-cloud."
+    },
+    {
+      "employer": "Scale AI",
+      "title": "Principal Architect",
+      "url": "https://job-boards.greenhouse.io/scaleai/jobs/4599202005",
+      "date_observed": "2026-04-25",
+      "location": "Washington, DC",
+      "in_window": true,
+      "source_depth": "full_jd",
+      "notes": "Salary $298,400-$373,000. 'Lead and mentor a high-performing engineering team of 80+.' LLMs, AI agents, distributed systems; senior external partner negotiations; ambiguous environments. Strong leadership posture."
+    },
+    {
+      "employer": "ABCO COMPUTERS PVT LTD (engagement reportedly for 84.51° / Kroger AI Enablement)",
+      "title": "AI Architect (Agentic Platforms)",
+      "url": "https://www.indeed.com/viewjob?jk=10022e24831f4758",
+      "date_observed": "2026-05-30",
+      "location": "Blue Ash, OH 45242 (in-person; EST/CST OK to relocate)",
+      "in_window": true,
+      "source_depth": "full_jd",
+      "notes": "Contract $65-$70/hr, 6-month contract to hire. 'Define and maintain the enterprise reference architecture for agentic platforms.' 'Deep understanding of MCP servers, tool calling, registries, eval pipelines.' Agent registries; agentic SDLC patterns (evals, safety tests, regression gates, monitoring); MCP/LangChain/LangGraph/LlamaIndex/AutoGen/CrewAI."
+    },
+    {
+      "employer": "SIA Innovations INC",
+      "title": "Agentic AI Engineer/Architect - FTA (Fast-Track Apprenticeship — System Architect)",
+      "url": "https://job-boards.greenhouse.io/siainnovationsinc/jobs/5206810008",
+      "date_observed": "2026-05-05",
+      "location": "Montréal, Quebec, Canada (on-site)",
+      "in_window": true,
+      "source_depth": "full_jd",
+      "notes": "Apprenticeship/Associate Architect. Python, REST APIs, OAuth2/JWT, OpenAPI, and MCP/tool integration; agent frameworks, multi-agent workflows; RAG/vector DBs; full bilingual FR/EN. Lower altitude (associate) but maps to the same architect-altitude skill set."
+    },
+    {
+      "employer": "Anthropic",
+      "title": "Manager of Applied AI Architecture, Partnerships",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5173031008",
+      "date_observed": "2026-05-28",
+      "location": "San Francisco, CA / New York City, NY / Seattle, WA",
+      "in_window": true,
+      "source_depth": "full_jd",
+      "notes": "Salary $315,000-$380,000. People-leadership variant: 'Build and supervise a Partner Solutions Architects team'; joint reference architectures with GSIs/cloud partners. Confirms architect-track demand at large frontier-lab consultancies."
+    },
+    {
+      "employer": "Anthropic",
+      "title": "Manager of Applied AI Architecture, Enterprise Tech (Cyber)",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5197538008",
+      "date_observed": "2026-05-30",
+      "location": "New York City, NY / San Francisco, CA / Seattle, WA",
+      "in_window": true,
+      "source_depth": "full_jd",
+      "notes": "Salary $315,000-$380,000. Manages Applied AI Architects engaging cyber-vertical customers. People-leadership variant; corroborates that frontier labs are formalizing 'Applied AI Architecture' as a job family."
+    },
+    {
+      "employer": "UnitedHealth Group",
+      "title": "Director of Architecture - Agentic AI Claims Automation",
+      "url": "https://careers.unitedhealthgroup.com/job/eden-prairie/director-architecture-remote/34088/95012675120",
+      "date_observed": "2026-05-08",
+      "location": "Eden Prairie, MN (Remote)",
+      "in_window": true,
+      "source_depth": "search_result_only",
+      "notes": "Per search-result summary: '6+ years of hands-on experience with agentic or orchestration frameworks (e.g., CrewAI, Agno, Google ADK, LangGraph, or similar) and experience designing scalable architectures for AI, GenAI, and agentic systems.' HIPAA/payer context. URL 404'd on direct fetch; data is from aggregator summary."
+    },
+    {
+      "employer": "84.51° (Kroger)",
+      "title": "AI Architect - Agentic Platforms",
+      "url": "https://job-boards.greenhouse.io/8451/jobs/8046185002",
+      "date_observed": "2026-05-12",
+      "location": "Cincinnati, OH / Chicago, IL / New York, NY",
+      "in_window": true,
+      "source_depth": "search_result_only",
+      "notes": "Per search-result summary: design and govern architecture for agent-based integrations, agent registries, scoring/evals infrastructure, grounding patterns, multi-agent orchestration; align with Kroger AI governance and RAI principles; agentic SDLC patterns (evals, safety tests, regression gates, monitoring); evaluate frameworks/standards/orchestration tools. JD index page returned aggregate listing only."
+    },
+    {
+      "employer": "Cognizant",
+      "title": "Agentic AI Architect (Richardson, TX)",
+      "url": "https://careers.cognizant.com/global-en/jobs/00066651021/agentic-ai-architect/",
+      "date_observed": "2026-04-20",
+      "location": "Richardson, TX",
+      "in_window": true,
+      "source_depth": "search_result_only",
+      "notes": "Posting 404'd on direct fetch (likely filled). Per cached search summary: 'designing, building, and scaling agentic AI systems that plan, reason, and act across complex enterprise workflows, owning the reference architecture, enforcing safety and governance, and leading cross-functional delivery.' Corroborated by multiple aggregators."
+    },
+    {
+      "employer": "Cognizant",
+      "title": "Senior Manager - Agentic AI Architect",
+      "url": "https://careers.cognizant.com/us-en/jobs/00067280773/senior-manager-agentic-ai-architect/",
+      "date_observed": "2026-05-02",
+      "location": "Chennai, Tamil Nadu, India",
+      "in_window": true,
+      "source_depth": "search_result_only",
+      "notes": "Direct page 404. Per search summary: senior-manager-altitude architect for agentic systems delivery; same skill set as the Stockholm/Dallas Cognizant variants."
+    },
+    {
+      "employer": "Capgemini",
+      "title": "Agentic Architect",
+      "url": "https://careers.capgemini.com/job/Atlanta,-GA-Agentic-Architect-GA-30301/1385745533/",
+      "date_observed": "2026-04-15",
+      "location": "Atlanta, GA",
+      "in_window": true,
+      "source_depth": "search_result_only",
+      "notes": "Position filled at fetch time. Per cached summary: 'designing Azure-based agentic AI solutions, including conversational/chatbot interfaces, and collaborating with engineering on AI orchestration, data integration, security, scalability, and performance.'"
+    },
+    {
+      "employer": "dentsu (Merkle brand)",
+      "title": "Agentic AI Architect",
+      "url": "https://builtin.com/job/agentic-ai-architect/7547018",
+      "date_observed": "2025-11-13",
+      "location": "Remote, Ohio, USA",
+      "in_window": false,
+      "source_depth": "full_jd",
+      "notes": "Removed 2025-11-13 (outside 90-day window). Retained as corroborating evidence. Salary $113K-$182.85K. Multi-agent orchestration; LangChain/LangGraph/CrewAI/AutoGen/Semantic Kernel; AI governance/safety/ethical standards; Azure/AWS; GDPR/HIPAA; OAuth2."
+    },
+    {
+      "employer": "Vertex, Inc.",
+      "title": "Principal Architect, Agentic AI",
+      "url": "https://builtin.com/job/principal-architect-agentic-ai/7543570",
+      "date_observed": "2026-01-09",
+      "location": "Remote, USA",
+      "in_window": false,
+      "source_depth": "full_jd",
+      "notes": "Removed 2026-01-09 (outside 90-day window). Retained as corroborating evidence. Salary $229,800-$298,700. Agent-to-Agent Protocols across AWS/Azure; Azure OpenAI deployment optimization; hybrid SQL/NoSQL; multi-tenant security/isolation."
+    },
+    {
+      "employer": "NVIDIA",
+      "title": "Solutions Architect, Agentic AI",
+      "url": "https://builtin.com/job/solutions-architect-agentic-ai/4168909",
+      "date_observed": "2025-05-30",
+      "location": "4 locations (In-Office or Remote)",
+      "in_window": false,
+      "source_depth": "full_jd",
+      "notes": "Removed 2025-05-30 (outside 90-day window). Retained as historical context (architects partnering with customers on NVIDIA's Agentic AI computing platforms)."
+    },
+    {
+      "employer": "66degrees",
+      "title": "Workspace Architect (incl. AI Agent solutions on GCP Vertex AI Agent Builder)",
+      "url": "https://job-boards.greenhouse.io/66degrees/jobs/5746817004",
+      "date_observed": "2026-05-18",
+      "location": "Remote, United States",
+      "in_window": true,
+      "source_depth": "full_jd",
+      "notes": "Title is workspace migration but the JD explicitly includes 'Design AI Agent solutions including workflow definitions, tool integration, and governance structures.' Lower-altitude relevance; included as 1 vote for governance-of-agents requirement."
     }
   ],
-  "summary": "Owns the design, evolution, and governance of agent-based systems enabling autonomous and semi-autonomous workflows. The concrete charter is an internal AI-for-SDLC platform that extends an agentic coding tool (Claude Code) via a plugin architecture (Agents, Skills, Hooks, MCP), letting the AI securely interface with internal SDLC toolchains and proprietary data to perform requirements analysis, code generation, and debugging - security-first, governed, and compliant with FERPA/COPPA.",
+  "themes_observed": [
+    {
+      "theme_id": "TH-01",
+      "theme": "Multi-agent orchestration architecture (orchestrator-worker, planner/executor, handoffs vs. manager-as-tools)",
+      "in_window_postings_citing": 18,
+      "frequency": 0.82,
+      "covered_by_existing_curriculum": ["mod-302-multi-agent-orchestration", "mod-301-agentic-systems-foundations"],
+      "gap": false
+    },
+    {
+      "theme_id": "TH-02",
+      "theme": "Production agentic framework fluency (LangGraph, CrewAI, AutoGen, Semantic Kernel, LangChain/LlamaIndex)",
+      "in_window_postings_citing": 16,
+      "frequency": 0.73,
+      "covered_by_existing_curriculum": ["mod-302-multi-agent-orchestration", "mod-301-agentic-systems-foundations"],
+      "gap": false,
+      "note": "Implementation-altitude framework mechanics are owned by the lower-level agentic-ai-engineer track (level 30). Architect track covers framework selection/evaluation, which is correctly framed in mod-302 exercise on MCP/A2A integration."
+    },
+    {
+      "theme_id": "TH-03",
+      "theme": "Model Context Protocol (MCP) integration",
+      "in_window_postings_citing": 9,
+      "frequency": 0.41,
+      "covered_by_existing_curriculum": ["mod-310-agentic-developer-platforms", "mod-302-multi-agent-orchestration"],
+      "gap": false,
+      "note": "Up from preferred-only in seed cycle (was REQ-ASA-16 'a major plus'). Now firmly a required-tier capability across postings citing it. Existing coverage is at architect altitude; no expansion needed."
+    },
+    {
+      "theme_id": "TH-04",
+      "theme": "Memory/context engineering and RAG architecture",
+      "in_window_postings_citing": 15,
+      "frequency": 0.68,
+      "covered_by_existing_curriculum": ["mod-303-memory-context-architecture"],
+      "gap": false
+    },
+    {
+      "theme_id": "TH-05",
+      "theme": "Evaluation harnesses (trajectory + final-state, tool-call correctness, LLM-as-judge, regression gates)",
+      "in_window_postings_citing": 10,
+      "frequency": 0.45,
+      "covered_by_existing_curriculum": ["mod-304-evaluation-harnesses"],
+      "gap": false
+    },
+    {
+      "theme_id": "TH-06",
+      "theme": "Observability / tracing for agents (OTel GenAI, LangFuse, LangSmith, Arize Phoenix; quality/drift signals)",
+      "in_window_postings_citing": 9,
+      "frequency": 0.41,
+      "covered_by_existing_curriculum": ["mod-305-observability-tracing"],
+      "gap": false
+    },
+    {
+      "theme_id": "TH-07",
+      "theme": "Secure agent execution: OAuth/RBAC, token management, prompt-injection mitigation, tool sandboxing, OWASP LLM Top 10 / MITRE ATLAS / NIST AI RMF",
+      "in_window_postings_citing": 11,
+      "frequency": 0.50,
+      "covered_by_existing_curriculum": ["mod-306-guardrails-safety-security"],
+      "gap": false
+    },
+    {
+      "theme_id": "TH-08",
+      "theme": "MCP server / tool registry / agent gateway as a governance pattern (enterprise tool catalog with auth, discovery, audit)",
+      "in_window_postings_citing": 6,
+      "frequency": 0.27,
+      "covered_by_existing_curriculum": ["mod-306-guardrails-safety-security", "mod-309-governance-compliance-domain", "mod-310-agentic-developer-platforms"],
+      "gap": false,
+      "note": "Just below the 0.30 threshold (6/22 = 27%). This is a sharper architectural manifestation of three things the curriculum already covers (OAuth/RBAC for toolchains in mod-306; plugin-lifecycle governance in mod-309; plugin architecture incl. MCP in mod-310). Frequency may cross 0.30 next cycle; revisit then. No addition this cycle."
+    },
+    {
+      "theme_id": "TH-09",
+      "theme": "AI governance / responsible AI / ISO-42001-style frameworks; plugin lifecycle governance",
+      "in_window_postings_citing": 12,
+      "frequency": 0.55,
+      "covered_by_existing_curriculum": ["mod-309-governance-compliance-domain"],
+      "gap": false
+    },
+    {
+      "theme_id": "TH-10",
+      "theme": "Regulated-domain architecture (FERPA/COPPA, HIPAA, FedRAMP, federal Public Trust)",
+      "in_window_postings_citing": 8,
+      "frequency": 0.36,
+      "covered_by_existing_curriculum": ["mod-309-governance-compliance-domain"],
+      "gap": false,
+      "note": "Seed posting was FERPA/COPPA-specific. Broader sample shows HIPAA (NTT DATA, UnitedHealth), federal/Public Trust (Guidehouse, Granicus). mod-309 currently has a FERPA/COPPA exercise; the regulated-domain capstone (project-302) is framework-agnostic and can absorb HIPAA/FedRAMP without restructure. Monitor next cycle; if HIPAA-specific quotes rise, add a single exercise."
+    },
+    {
+      "theme_id": "TH-11",
+      "theme": "Cost/latency/quality budgets and economics (token economics, prompt/prefix caching, model routing)",
+      "in_window_postings_citing": 5,
+      "frequency": 0.23,
+      "covered_by_existing_curriculum": ["mod-307-cost-latency-architecture"],
+      "gap": false
+    },
+    {
+      "theme_id": "TH-12",
+      "theme": "Durable execution, human-in-the-loop, deployment for long-running agents (Temporal-style)",
+      "in_window_postings_citing": 6,
+      "frequency": 0.27,
+      "covered_by_existing_curriculum": ["mod-308-deployment-durable-execution"],
+      "gap": false,
+      "note": "Acquia is the only posting that names Temporal explicitly. HITL is named by WGA, Imagine Learning, Cognizant Bedrock. Coverage in mod-308 is sufficient."
+    },
+    {
+      "theme_id": "TH-13",
+      "theme": "Pre-sales / executive scoping / consulting facilitation (C-suite workshops, RFI/RFP, opportunity architectures)",
+      "in_window_postings_citing": 10,
+      "frequency": 0.45,
+      "covered_by_existing_curriculum": ["mod-301-agentic-systems-foundations"],
+      "cross_role_owner": "team-lead",
+      "gap": false,
+      "note": "Already cross-linked at REQ-ASA-08; the team-lead track owns delivery/leadership depth."
+    },
+    {
+      "theme_id": "TH-14",
+      "theme": "Plugin architectures extending agentic coding tools (Agents/Skills/Hooks/MCP, AI-for-SDLC)",
+      "in_window_postings_citing": 3,
+      "frequency": 0.14,
+      "covered_by_existing_curriculum": ["mod-310-agentic-developer-platforms"],
+      "gap": false,
+      "note": "Below threshold for promotion, but the seed-Imagine-Learning charter remains a leading exemplar. mod-310 framing as 'Agentic Developer Platforms & SDLC Integration' is correct — it's one named domain, not the whole role."
+    },
+    {
+      "theme_id": "TH-15",
+      "theme": "AWS Bedrock Agents / Bedrock AgentCore / Azure OpenAI / GCP Vertex AI Agent Builder as platform-of-record",
+      "in_window_postings_citing": 8,
+      "frequency": 0.36,
+      "covered_by_existing_curriculum": ["mod-302-multi-agent-orchestration", "mod-310-agentic-developer-platforms"],
+      "gap": false,
+      "note": "Architects increasingly named to a specific managed agent platform. mod-302/mod-310 are platform-agnostic by design; reference-architecture teardowns in mod-301 already pull in concrete platforms. No curriculum change."
+    }
+  ],
   "requirements": [
-    {"id": "REQ-ASA-01", "type": "required", "text": "Design and evolve a plugin-based architecture (Agents, Skills, Hooks, Model Context Protocol/MCP) to extend Claude Code so AI can securely interface with internal SDLC toolchains and proprietary data.", "covered_by": ["mod-310-agentic-developer-platforms"]},
-    {"id": "REQ-ASA-02", "type": "required", "text": "Develop and optimize production AI applications via prompt engineering, context management, and tool-use patterns.", "covered_by": ["mod-301-agentic-systems-foundations", "mod-303-memory-context-architecture", "mod-310-agentic-developer-platforms"]},
-    {"id": "REQ-ASA-03", "type": "required", "text": "Develop reliable tool-use patterns and context-hydration strategies giving the agent precise system access/context to execute SDLC tasks (requirements analysis, code generation, debugging) autonomously.", "covered_by": ["mod-310-agentic-developer-platforms", "mod-303-memory-context-architecture"]},
-    {"id": "REQ-ASA-04", "type": "required", "text": "Design AI systems compliant with data privacy / regulatory requirements including FERPA and COPPA in regulated EdTech environments.", "covered_by": ["mod-309-governance-compliance-domain"]},
-    {"id": "REQ-ASA-05", "type": "required", "text": "Design developer-focused tooling emphasizing usability, adoption, onboarding, documentation, and continuous feedback loops.", "covered_by": ["mod-310-agentic-developer-platforms"]},
-    {"id": "REQ-ASA-06", "type": "required", "text": "Apply a security-first approach to local and remote agent execution: robust sandboxing, strict permission scopes, and secure authentication flows for CLI-based AI tools to prevent destructive actions or data leakage.", "covered_by": ["mod-306-guardrails-safety-security"]},
-    {"id": "REQ-ASA-07", "type": "required", "text": "Drive the governance strategy for the AI SDLC platform: how plugins are evaluated, versioned, approved, and monitored to prevent unauthorized changes or quality degradation.", "covered_by": ["mod-309-governance-compliance-domain", "mod-310-agentic-developer-platforms"]},
-    {"id": "REQ-ASA-08", "type": "required", "text": "Lead estimation, scoping, and planning for AI/ML initiatives with executive and senior stakeholders; deliver strategic platform milestones within Agile/SDLC best practices.", "covered_by": ["mod-301-agentic-systems-foundations"], "cross_role_owner": "team-lead", "note": "Leadership/delivery competency primarily owned by the team-lead track (level 40); architect track frames it as platform-milestone scoping."},
-    {"id": "REQ-ASA-09", "type": "required", "text": "Lead continuous improvement across system architecture, engineering quality, and AI model integration via hands-on leadership and measurable outcomes.", "covered_by": ["mod-304-evaluation-harnesses", "mod-305-observability-tracing"]},
-    {"id": "REQ-ASA-10", "type": "required", "text": "8 years as Lead Software Engineer / Platform Architect / AI Engineering Lead (Bachelor's; or 6+ with Master's; or 5+ with PhD).", "covered_by": [], "note": "Prerequisite/experience gate, not a teachable module. Recorded in PREREQUISITES.md."},
-    {"id": "REQ-ASA-11", "type": "required", "text": "Proven experience building AI-enabled developer tooling, function-calling (tool-use) pipelines, or extensible agentic platforms in production; architecting modular, extensible, scalable platforms.", "covered_by": ["mod-310-agentic-developer-platforms", "mod-302-multi-agent-orchestration"]},
-    {"id": "REQ-ASA-12", "type": "required", "text": "Proficiency in TypeScript/Node.js and/or Python; designing modular APIs, SDKs, or CLI tools; strong understanding of REST, GraphQL, and event-driven architectures.", "covered_by": ["mod-310-agentic-developer-platforms"], "note": "Track examples provided in both TS/Node and Python."},
-    {"id": "REQ-ASA-13", "type": "required", "text": "Working knowledge of data privacy and compliance requirements in regulated environments, including FERPA and COPPA.", "covered_by": ["mod-309-governance-compliance-domain"]},
-    {"id": "REQ-ASA-14", "type": "required", "text": "Deep understanding of secure system design: authentication flows (OAuth, token management for toolchains), RBAC, and mitigating AI vulnerabilities like insecure tool execution and prompt injection.", "covered_by": ["mod-306-guardrails-safety-security"]},
-    {"id": "REQ-ASA-15", "type": "required", "text": "Intimate knowledge of the modern SDLC and integrating with core DevOps and project-management toolchains (GitHub, Confluence, Jira, CI/CD).", "covered_by": ["mod-310-agentic-developer-platforms"]},
-    {"id": "REQ-ASA-16", "type": "preferred", "text": "Familiarity with the Model Context Protocol (MCP) ('a major plus').", "covered_by": ["mod-310-agentic-developer-platforms", "mod-302-multi-agent-orchestration"]},
-    {"id": "REQ-ASA-17", "type": "preferred", "text": "Familiarity with RAG or embedding-based retrieval.", "covered_by": ["mod-303-memory-context-architecture"]}
+    {"id": "REQ-ASA-01", "type": "required", "text": "Design and evolve a plugin-based architecture (Agents, Skills, Hooks, Model Context Protocol/MCP) to extend an agentic coding tool so AI can securely interface with internal SDLC toolchains and proprietary data.", "covered_by": ["mod-310-agentic-developer-platforms"], "theme_ids": ["TH-14", "TH-03"]},
+    {"id": "REQ-ASA-02", "type": "required", "text": "Develop and optimize production AI applications via prompt engineering, context management, and tool-use patterns.", "covered_by": ["mod-301-agentic-systems-foundations", "mod-303-memory-context-architecture", "mod-310-agentic-developer-platforms"], "theme_ids": ["TH-04"]},
+    {"id": "REQ-ASA-03", "type": "required", "text": "Develop reliable tool-use patterns and context-hydration strategies giving the agent precise system access/context to execute SDLC and other autonomous tasks.", "covered_by": ["mod-310-agentic-developer-platforms", "mod-303-memory-context-architecture"], "theme_ids": ["TH-04", "TH-14"]},
+    {"id": "REQ-ASA-04", "type": "required", "text": "Design AI systems compliant with data privacy / regulatory requirements (FERPA, COPPA, HIPAA, FedRAMP, federal Public Trust).", "covered_by": ["mod-309-governance-compliance-domain"], "theme_ids": ["TH-10"]},
+    {"id": "REQ-ASA-05", "type": "required", "text": "Design developer-focused tooling emphasizing usability, adoption, onboarding, documentation, and continuous feedback loops.", "covered_by": ["mod-310-agentic-developer-platforms"], "theme_ids": ["TH-14"]},
+    {"id": "REQ-ASA-06", "type": "required", "text": "Apply a security-first approach to local and remote agent execution: robust sandboxing, strict permission scopes, secure auth flows, OWASP LLM Top 10 / MITRE ATLAS / NIST AI RMF awareness.", "covered_by": ["mod-306-guardrails-safety-security"], "theme_ids": ["TH-07"]},
+    {"id": "REQ-ASA-07", "type": "required", "text": "Drive governance for an agentic platform: how plugins/agents/tools are evaluated, versioned, approved, monitored; align with AI governance frameworks (ISO/IEC 42001, RAI principles).", "covered_by": ["mod-309-governance-compliance-domain", "mod-310-agentic-developer-platforms"], "theme_ids": ["TH-09"]},
+    {"id": "REQ-ASA-08", "type": "required", "text": "Lead estimation, scoping, and planning for AI/ML initiatives with executive and senior stakeholders; deliver via Agile/SDLC; client/pre-sales scoping where applicable.", "covered_by": ["mod-301-agentic-systems-foundations"], "cross_role_owner": "team-lead", "theme_ids": ["TH-13"]},
+    {"id": "REQ-ASA-09", "type": "required", "text": "Lead continuous improvement across system architecture and AI model integration via measurable outcomes (evaluation + observability).", "covered_by": ["mod-304-evaluation-harnesses", "mod-305-observability-tracing"], "theme_ids": ["TH-05", "TH-06"]},
+    {"id": "REQ-ASA-10", "type": "required", "text": "8 years as Lead Software Engineer / Platform Architect / AI Engineering Lead (or graduate-equivalent shorter tracks). Postings range 7-15+ yrs.", "covered_by": [], "note": "Prerequisite/experience gate, not a teachable module. Recorded in PREREQUISITES.md."},
+    {"id": "REQ-ASA-11", "type": "required", "text": "Proven experience building AI-enabled developer tooling, function-calling/tool-use pipelines, or extensible agentic platforms in production; architecting modular, extensible, scalable platforms.", "covered_by": ["mod-310-agentic-developer-platforms", "mod-302-multi-agent-orchestration"], "theme_ids": ["TH-01", "TH-02"]},
+    {"id": "REQ-ASA-12", "type": "required", "text": "Proficiency in Python and TypeScript/Node.js; modular APIs/SDKs/CLI; REST, GraphQL, event-driven architectures.", "covered_by": ["mod-310-agentic-developer-platforms"], "note": "Track examples provided in both TS/Node and Python."},
+    {"id": "REQ-ASA-13", "type": "required", "text": "Working knowledge of data privacy/compliance requirements in regulated environments.", "covered_by": ["mod-309-governance-compliance-domain"], "theme_ids": ["TH-10"]},
+    {"id": "REQ-ASA-14", "type": "required", "text": "Deep understanding of secure system design: OAuth, token management, RBAC; mitigating insecure tool execution and prompt injection.", "covered_by": ["mod-306-guardrails-safety-security"], "theme_ids": ["TH-07"]},
+    {"id": "REQ-ASA-15", "type": "required", "text": "Intimate knowledge of modern SDLC and integrating with core DevOps and PM toolchains (GitHub, Confluence, Jira, CI/CD).", "covered_by": ["mod-310-agentic-developer-platforms"], "theme_ids": ["TH-14"]},
+    {"id": "REQ-ASA-16", "type": "promoted_to_required", "text": "Model Context Protocol (MCP) integration: build/secure MCP servers, tool registries, connector patterns; previously preferred, now appears across 9/22 in-window postings.", "covered_by": ["mod-310-agentic-developer-platforms", "mod-302-multi-agent-orchestration", "mod-306-guardrails-safety-security"], "theme_ids": ["TH-03", "TH-08"], "delta_vs_prior_cycle": "Promoted from 'preferred' (REQ-ASA-16 in 2026-06-14 seed) to required-tier evidence. No new module needed; existing coverage in mod-302/306/310 already addresses MCP at architecture altitude."},
+    {"id": "REQ-ASA-17", "type": "preferred", "text": "Familiarity with RAG or embedding-based retrieval.", "covered_by": ["mod-303-memory-context-architecture"], "theme_ids": ["TH-04"]},
+    {"id": "REQ-ASA-18", "type": "required_emerging", "text": "Architect agent observability into the platform: tracing/eval/prompt management with tools like LangFuse, LangSmith, Arize Phoenix; align with OTel GenAI semantic conventions.", "covered_by": ["mod-305-observability-tracing", "mod-304-evaluation-harnesses"], "theme_ids": ["TH-06", "TH-05"], "delta_vs_prior_cycle": "New explicit requirement category from this cycle's evidence (Acquia, ABCO/84.51, Experian, Apollo refs). Already covered by mod-305 and mod-304; no addition needed."},
+    {"id": "REQ-ASA-19", "type": "required_emerging", "text": "Architect multi-agent orchestration leveraging A2A, MCP, or vendor agent protocols across clouds (Bedrock AgentCore, Azure AI Foundry, Vertex AI Agent Builder).", "covered_by": ["mod-302-multi-agent-orchestration", "mod-310-agentic-developer-platforms"], "theme_ids": ["TH-01", "TH-03", "TH-15"], "delta_vs_prior_cycle": "Cross-cloud agent protocols and managed agent platforms are now standard in postings (Vertex, Cognizant Bedrock, Granicus, Acquia, 84.51). Already covered at architect altitude in mod-302/310; platform-specific deep dives belong in the lower-level agentic-ai-engineer track."}
   ]
 }
