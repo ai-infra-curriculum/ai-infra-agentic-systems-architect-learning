@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "role_id": "agentic-systems-architect",
+  "title": "Agentic Systems Architect",
+  "generated_at": "2026-06-14",
+  "postings_sampled": 1,
+  "notes": "Seeded from the verbatim Imagine Learning posting (the posting that motivated this role). This is a single, high-signal posting; the nightly research cycle should broaden to >=25 postings and recompute frequencies. Every requirement below is mapped to a curriculum module in curriculum-plan.json. See JOB_REQUIREMENTS.md for the readable traceability table.",
+  "postings": [
+    {
+      "employer": "Imagine Learning",
+      "title": "Agentic Systems Architect",
+      "url": "https://www.edtech.com/jobs/agentic-systems-architect-9085",
+      "url_original_expired": "https://www.edtech.com/jobs/agentic-systems-architect-8511",
+      "date_posted": "2026-05-19",
+      "location": "Remote - US (offices: Tempe AZ HQ, Austin TX, Petaluma CA, Rock Rapids IA, Bloomington MN)",
+      "employment_type": "Full-Time",
+      "salary_range_usd": {"min": 153415, "max": 200000, "period": "year", "plus": "incentive/commission/annual bonus eligibility"},
+      "team": "Engineering, Tech, and IT",
+      "reports_to": "Senior Director of Engineering",
+      "travel": "up to ~25%",
+      "work_authorization": "US Person required; sponsorship not available",
+      "corroborating_sources": [
+        "https://www.ziprecruiter.com/c/Imagine-Learning/Job/Agentic-Systems-Architect",
+        "https://www.indeed.com/viewjob?jk=f92ec5f5b3020dbe",
+        "https://jobright.ai/jobs/info/69f230668d8d624381a9f8c6"
+      ]
+    }
+  ],
+  "summary": "Owns the design, evolution, and governance of agent-based systems enabling autonomous and semi-autonomous workflows. The concrete charter is an internal AI-for-SDLC platform that extends an agentic coding tool (Claude Code) via a plugin architecture (Agents, Skills, Hooks, MCP), letting the AI securely interface with internal SDLC toolchains and proprietary data to perform requirements analysis, code generation, and debugging - security-first, governed, and compliant with FERPA/COPPA.",
+  "requirements": [
+    {"id": "REQ-ASA-01", "type": "required", "text": "Design and evolve a plugin-based architecture (Agents, Skills, Hooks, Model Context Protocol/MCP) to extend Claude Code so AI can securely interface with internal SDLC toolchains and proprietary data.", "covered_by": ["mod-310-agentic-developer-platforms"]},
+    {"id": "REQ-ASA-02", "type": "required", "text": "Develop and optimize production AI applications via prompt engineering, context management, and tool-use patterns.", "covered_by": ["mod-301-agentic-systems-foundations", "mod-303-memory-context-architecture", "mod-310-agentic-developer-platforms"]},
+    {"id": "REQ-ASA-03", "type": "required", "text": "Develop reliable tool-use patterns and context-hydration strategies giving the agent precise system access/context to execute SDLC tasks (requirements analysis, code generation, debugging) autonomously.", "covered_by": ["mod-310-agentic-developer-platforms", "mod-303-memory-context-architecture"]},
+    {"id": "REQ-ASA-04", "type": "required", "text": "Design AI systems compliant with data privacy / regulatory requirements including FERPA and COPPA in regulated EdTech environments.", "covered_by": ["mod-309-governance-compliance-domain"]},
+    {"id": "REQ-ASA-05", "type": "required", "text": "Design developer-focused tooling emphasizing usability, adoption, onboarding, documentation, and continuous feedback loops.", "covered_by": ["mod-310-agentic-developer-platforms"]},
+    {"id": "REQ-ASA-06", "type": "required", "text": "Apply a security-first approach to local and remote agent execution: robust sandboxing, strict permission scopes, and secure authentication flows for CLI-based AI tools to prevent destructive actions or data leakage.", "covered_by": ["mod-306-guardrails-safety-security"]},
+    {"id": "REQ-ASA-07", "type": "required", "text": "Drive the governance strategy for the AI SDLC platform: how plugins are evaluated, versioned, approved, and monitored to prevent unauthorized changes or quality degradation.", "covered_by": ["mod-309-governance-compliance-domain", "mod-310-agentic-developer-platforms"]},
+    {"id": "REQ-ASA-08", "type": "required", "text": "Lead estimation, scoping, and planning for AI/ML initiatives with executive and senior stakeholders; deliver strategic platform milestones within Agile/SDLC best practices.", "covered_by": ["mod-301-agentic-systems-foundations"], "cross_role_owner": "team-lead", "note": "Leadership/delivery competency primarily owned by the team-lead track (level 40); architect track frames it as platform-milestone scoping."},
+    {"id": "REQ-ASA-09", "type": "required", "text": "Lead continuous improvement across system architecture, engineering quality, and AI model integration via hands-on leadership and measurable outcomes.", "covered_by": ["mod-304-evaluation-harnesses", "mod-305-observability-tracing"]},
+    {"id": "REQ-ASA-10", "type": "required", "text": "8 years as Lead Software Engineer / Platform Architect / AI Engineering Lead (Bachelor's; or 6+ with Master's; or 5+ with PhD).", "covered_by": [], "note": "Prerequisite/experience gate, not a teachable module. Recorded in PREREQUISITES.md."},
+    {"id": "REQ-ASA-11", "type": "required", "text": "Proven experience building AI-enabled developer tooling, function-calling (tool-use) pipelines, or extensible agentic platforms in production; architecting modular, extensible, scalable platforms.", "covered_by": ["mod-310-agentic-developer-platforms", "mod-302-multi-agent-orchestration"]},
+    {"id": "REQ-ASA-12", "type": "required", "text": "Proficiency in TypeScript/Node.js and/or Python; designing modular APIs, SDKs, or CLI tools; strong understanding of REST, GraphQL, and event-driven architectures.", "covered_by": ["mod-310-agentic-developer-platforms"], "note": "Track examples provided in both TS/Node and Python."},
+    {"id": "REQ-ASA-13", "type": "required", "text": "Working knowledge of data privacy and compliance requirements in regulated environments, including FERPA and COPPA.", "covered_by": ["mod-309-governance-compliance-domain"]},
+    {"id": "REQ-ASA-14", "type": "required", "text": "Deep understanding of secure system design: authentication flows (OAuth, token management for toolchains), RBAC, and mitigating AI vulnerabilities like insecure tool execution and prompt injection.", "covered_by": ["mod-306-guardrails-safety-security"]},
+    {"id": "REQ-ASA-15", "type": "required", "text": "Intimate knowledge of the modern SDLC and integrating with core DevOps and project-management toolchains (GitHub, Confluence, Jira, CI/CD).", "covered_by": ["mod-310-agentic-developer-platforms"]},
+    {"id": "REQ-ASA-16", "type": "preferred", "text": "Familiarity with the Model Context Protocol (MCP) ('a major plus').", "covered_by": ["mod-310-agentic-developer-platforms", "mod-302-multi-agent-orchestration"]},
+    {"id": "REQ-ASA-17", "type": "preferred", "text": "Familiarity with RAG or embedding-based retrieval.", "covered_by": ["mod-303-memory-context-architecture"]}
+  ]
+}
