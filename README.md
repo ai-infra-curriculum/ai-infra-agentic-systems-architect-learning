@@ -1,5 +1,9 @@
 # AI Infrastructure Agentic Systems Architect — Learning Repository
 
+<!-- aicg:site-banner -->
+> 🎓 Part of the **[AI Infrastructure Curriculum](https://ai-infra-curriculum.github.io/)** — a free, open-source ladder of role-based AI-infrastructure programs. [Explore the ladder](https://ai-infra-curriculum.github.io/) · [Join the first live cohort](https://ai-infra-curriculum.github.io/junior.html)
+<!-- /aicg:site-banner -->
+
 Designs end-to-end architecture for production agentic AI systems: orchestration topology, state/memory placement, escalation and human-in-the-loop boundaries, cost modeling, evaluation, observability, and security/governance.
 
 > **Status**: scaffolded by `aicg org bootstrap-role`. The curriculum is not authored yet. Run `aicg org research` and `aicg org daily` to drive the autonomous fill-in loop.
@@ -19,7 +23,6 @@ ai-infra-agentic-systems-architect-learning/
 ## Paired Solutions Repo
 
 [`ai-infra-agentic-systems-architect-solutions`](https://github.com/ai-infra-curriculum/ai-infra-agentic-systems-architect-solutions) carries the reference implementations.
-
 
 ---
 
