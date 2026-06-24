@@ -6,7 +6,7 @@
 
 Designs end-to-end architecture for production agentic AI systems: orchestration topology, state/memory placement, escalation and human-in-the-loop boundaries, cost modeling, evaluation, observability, and security/governance.
 
-> **Status**: scaffolded by `aicg org bootstrap-role`. The curriculum is not authored yet. Run `aicg org research` and `aicg org daily` to drive the autonomous fill-in loop.
+> **Status**: ✅ Curriculum complete — modules, lecture chapters, exercises, and quizzes authored. AI-assisted content under ongoing human review.
 
 ## Layout
 
