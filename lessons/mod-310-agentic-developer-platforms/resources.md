@@ -1,44 +1,48 @@
-# Resources for mod-310-agentic-developer-platforms (Agentic Developer Platforms & SDLC Integration)
+# Resources for mod-310-agentic-developer-platforms (Agentic Developer & Internal Platforms)
 
-Primary references for designing an agentic developer platform on an extensible coding tool. Verify against current docs — agent tooling and platform APIs move fast.
+Primary references for designing an extensible internal agent platform across host platforms as peers. Verify against current docs — agent tooling and platform APIs move fast. No reference below is "the" platform; treat the hosts as equals and design at the generic-extension-model level ([Chapter 1](01-extension-model-across-platforms.md)).
 
-## Claude Code extension standards (the four extension points)
+## Host platforms (the extension model, mapped as peers)
 
-Docs live at [code.claude.com/docs](https://code.claude.com/docs). These are the concrete reference for Chapter 1's plugin architecture.
+These are the named hosts the module maps as peers. Read them side by side to see the *same* four extension points (agents, skills/tools, hooks/lifecycle, MCP) bound differently.
 
-- **Subagents** ([code.claude.com/docs/en/sub-agents](https://code.claude.com/docs/en/sub-agents)) — isolated-context agents with their own system prompt and scoped tools; the "Agents" extension point.
-- **Skills / Agent Skills** ([code.claude.com/docs/en/skills](https://code.claude.com/docs/en/skills)) — packaged procedural knowledge (`SKILL.md`) loaded on demand; see also the engineering write-up *Equipping agents for the real world with Agent Skills* ([anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)).
-- **Hooks** ([code.claude.com/docs/en/hooks](https://code.claude.com/docs/en/hooks)) — deterministic shell commands on lifecycle events (`PreToolUse`, `PostToolUse`, `Stop`, `SessionStart`, …); the guarantees layer.
-- **MCP in Claude Code** ([code.claude.com/docs/en/mcp](https://code.claude.com/docs/en/mcp)) — connecting external tools/resources via MCP servers; the access layer.
-- **Plugins** ([code.claude.com/docs/en/plugins](https://code.claude.com/docs/en/plugins)) and **plugin marketplaces** ([code.claude.com/docs/en/plugin-marketplaces](https://code.claude.com/docs/en/plugin-marketplaces)) — packaging all four extension types into one versioned, installable unit.
+- **Claude Code — docs** ([code.claude.com/docs](https://code.claude.com/docs)) — subagents, Agent Skills, hooks (`PreToolUse`/`PostToolUse`/`Stop`/`SessionStart`), MCP client, and plugins/marketplaces. One peer's full extension model, well-documented.
+- **Cursor — docs** ([docs.cursor.com](https://docs.cursor.com)) — rules/`.cursor/rules`, custom modes/agents, built-in tools, and MCP support. A second peer with a different packaging of the same points.
+- **GitHub Copilot — docs** ([docs.github.com/copilot](https://docs.github.com/en/copilot)) — coding agent, custom/repository instructions, extensions, and MCP. A third peer; note where the lifecycle/hook row is thin and guarantees move to CI/policy.
+- **LangGraph Platform — docs** ([langchain-ai.github.io/langgraph](https://langchain-ai.github.io/langgraph/)) — graph nodes/sub-graphs as agents, tools as functions, interrupts/callbacks as the lifecycle layer, and MCP client support. An orchestration-platform peer that makes the lifecycle row explicit.
+- **Building a custom host** — the always-available peer. The **Claude Agent SDK** ([code.claude.com/docs/en/sdk](https://code.claude.com/docs/en/sdk)) and equivalent agent frameworks let you implement the four extension points yourself; use this as the portability/lock-in baseline.
 
-## Model Context Protocol
+## Model Context Protocol (the portability anchor)
 
-- **MCP specification and docs** ([modelcontextprotocol.io](https://modelcontextprotocol.io)) — the open protocol for tools, resources, and prompts. The authoritative reference for the access layer.
+- **MCP specification and docs** ([modelcontextprotocol.io](https://modelcontextprotocol.io)) — the open protocol for tools, resources, and prompts. The authoritative reference for the external-access layer and the most portable part of any platform ([Chapter 1](01-extension-model-across-platforms.md)).
 - **MCP servers reference** ([github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)) — reference and community server implementations to study before building your own.
 
-## AI for the SDLC and effective agents
+## Agent design, tool-use, and context (Chapter 2)
 
-- **Anthropic — Building effective agents** ([anthropic.com/engineering/building-effective-agents](https://www.anthropic.com/engineering/building-effective-agents)) — workflow-vs-agent judgment and the orchestration patterns underpinning a platform's internals.
-- **Anthropic — Claude Code best practices** ([anthropic.com/engineering/claude-code-best-practices](https://www.anthropic.com/engineering/claude-code-best-practices)) — practical patterns for agentic coding workflows that inform tool design and context hydration.
-- **Claude Agent SDK** ([code.claude.com/docs/en/sdk](https://code.claude.com/docs/en/sdk)) — for building platform services around the agent loop with subagent isolation and tool scoping.
+- **Anthropic — Building effective agents** ([anthropic.com/engineering/building-effective-agents](https://www.anthropic.com/engineering/building-effective-agents)) — workflow-vs-agent judgment and the patterns underpinning a platform's internals; vendor framing but broadly applicable.
+- **Anthropic — Equipping agents for the real world with Agent Skills** ([anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)) — skills as loadable procedural knowledge; the "docs that pay twice" idea ([Chapter 4](04-platform-developer-experience-and-adoption.md)).
+- **OWASP Top 10 for LLM Applications** ([owasp.org/www-project-top-10-for-large-language-model-applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)) — prompt injection, insecure tool use, excessive agency; the threat catalog behind the trust-asymmetry design ([Chapter 2](02-secure-tool-use-and-context-hydration.md)).
 
-## DevOps and PM toolchain APIs (Chapter 4)
+## Toolchain integration: REST, GraphQL, event-driven (Chapter 3)
 
-- **GitHub REST API** ([docs.github.com/en/rest](https://docs.github.com/en/rest)) — writes (open/update PR, comment) and shallow reads.
-- **GitHub GraphQL API** ([docs.github.com/en/graphql](https://docs.github.com/en/graphql)) — deep/related reads in one round-trip; note the point-based rate budget.
-- **GitHub webhooks** ([docs.github.com/en/webhooks](https://docs.github.com/en/webhooks)) — event-driven triggers (PR opened, check completed, review submitted); see also signature verification.
-- **Jira Cloud REST API** ([developer.atlassian.com/cloud/jira/platform/rest/v3](https://developer.atlassian.com/cloud/jira/platform/rest/v3/)) — read/transition issues, comment.
-- **Jira webhooks** ([developer.atlassian.com/cloud/jira/platform/webhooks](https://developer.atlassian.com/cloud/jira/platform/webhooks/)) — react to issue events.
-- **Confluence Cloud REST API** ([developer.atlassian.com/cloud/confluence/rest/v2](https://developer.atlassian.com/cloud/confluence/rest/v2/)) — read design/spec pages for requirements context.
+Vendor-neutral by category. The interface-selection rule (REST writes / GraphQL deep reads / events to react) holds whichever products an org runs; these are representative APIs to study.
 
-## Security and trust boundaries (Chapter 2)
+- **REST API design — Microsoft API guidelines** ([github.com/microsoft/api-guidelines](https://github.com/microsoft/api-guidelines)) — resource modeling and the shallow-read/discrete-write shape REST fits.
+- **GraphQL — official spec & learn** ([graphql.org/learn](https://graphql.org/learn/)) — client-shaped queries that collapse an N+1 read into one round-trip; note query-cost/point budgets.
+- **GitHub REST + GraphQL** ([docs.github.com/rest](https://docs.github.com/en/rest), [docs.github.com/graphql](https://docs.github.com/en/graphql)) — one VCS host showing both interfaces side by side; the GraphQL point budget is a concrete example.
+- **Atlassian Jira Cloud REST + webhooks** ([developer.atlassian.com/cloud/jira/platform/rest/v3](https://developer.atlassian.com/cloud/jira/platform/rest/v3/), [/webhooks](https://developer.atlassian.com/cloud/jira/platform/webhooks/)) — an issue-tracker peer with reads/transitions over REST and events over webhooks.
+- **GitLab webhooks** ([docs.gitlab.com/ee/user/project/integrations/webhooks.html](https://docs.gitlab.com/ee/user/project/integrations/webhooks.html)) — a second event-source peer; compare signature/secret handling across vendors.
+- **Webhook robustness — verification, idempotency, async handling** ([webhooks.fyi](https://webhooks.fyi/)) — signature verification, fast-return + async processing, and dedupe-on-delivery-ID — the four receiver requirements in [Chapter 3](03-workflow-toolchain-integration.md).
 
-- **OWASP Top 10 for LLM Applications** ([owasp.org/www-project-top-10-for-large-language-model-applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)) — prompt injection, insecure tool use, excessive agency; the threat catalog for the trust-boundary spec.
+## Developer experience, adoption, and feedback loops (Chapter 4)
+
+- **Team Topologies — platform-as-a-product / thinnest viable platform** ([teamtopologies.com](https://teamtopologies.com/)) — treating an internal platform as a product with adoption and DX as first-class concerns; the framing behind "platforms get bypassed."
+- **Internal Developer Platform — concepts** ([internaldeveloperplatform.org](https://internaldeveloperplatform.org/)) — golden paths, self-service, and onboarding patterns that generalize to agent platforms.
+- **Anthropic — Claude Code best practices** ([anthropic.com/engineering/claude-code-best-practices](https://www.anthropic.com/engineering/claude-code-best-practices)) — practical agentic-platform patterns; read as one host's take, not as universal law.
 
 ## Related modules
 
 - [mod-301: Agentic Systems Foundations](../mod-301-agentic-systems-foundations/README.md) — workflow-vs-agent judgment.
-- [mod-302: Multi-Agent Orchestration](../mod-302-multi-agent-orchestration/README.md) — subagents, MCP, A2A at the architecture level.
-- [mod-304: Evaluation Harnesses](../mod-304-evaluation-harnesses/README.md) — the eval-gating discipline that backs Chapter 5's feedback loops.
-</content>
+- [mod-302: Multi-Agent Orchestration](../mod-302-multi-agent-orchestration/README.md) — subagents, MCP, and agent-to-agent interfaces at the architecture level.
+- [mod-304: Evaluation Harnesses](../mod-304-evaluation-harnesses/README.md) — the eval-gating discipline that backs Chapter 4's feedback loops.
+- [mod-308: Deployment & Durable Execution](../mod-308-deployment-durable-execution/README.md) — the durable human-in-the-loop gate that backs the irreversible-action gating in Chapter 2.

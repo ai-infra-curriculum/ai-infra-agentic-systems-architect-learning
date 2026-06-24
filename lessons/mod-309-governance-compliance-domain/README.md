@@ -1,41 +1,61 @@
-# mod-309-governance-compliance-domain: Governance, Compliance & Domain Constraints
+# mod-309-governance-compliance-domain: Governance, Compliance & Regulated-Domain Architecture
 
 **Estimated effort:** 15 hours
 
-By the time an agentic platform reaches production, the hard problems are no longer "can the agent do it?" — they are "are we *allowed* to ship it, can we *prove* we governed it, and who is *accountable* when it goes wrong?" Those are architecture problems, not afterthoughts. A fleet of autonomous agents that takes actions, calls tools, ingests regulated data, and produces output for vulnerable end-users is a regulated system whether or not anyone wrote it down. This module is where you, as the architect, make the governance explicit: you map a recognized management-system standard onto your platform, translate regulation into concrete architectural controls, build a plugin-governance lifecycle that keeps an extensible platform from becoming an ungoverned one, design for the sharpest-edged sector (K-12 edtech, where minors, FERPA, and COPPA collide), and write the governance, accountability, and risk-control specifications a fleet operator and an auditor will actually hold you to.
+By the time an agentic platform reaches production, the hard questions are no longer "can the agent do it?" — they are "are we *allowed* to ship it, can we *prove* we governed it, and who is *accountable* when it goes wrong?" Those are architecture problems, not afterthoughts. A fleet of autonomous agents that takes actions, calls tools, ingests sensitive data, and produces output that affects real people is a governed system whether or not anyone wrote it down. This module is where you, as the **architect**, make the governance explicit — and you do it the right way around: **horizontal AI governance first** (a discipline that applies to any AI system in any sector), then the *generic* method for turning regulatory constraints into architecture, and only then the sector-specific deltas.
 
-> **Governance is design, not paperwork.** A control you cannot point at in the architecture is a control you do not have. Every framework clause in this module resolves to a component, a boundary, a log, an approval gate, or an owner — something a reviewer can inspect. If a requirement does not change the system diagram, you have not finished translating it.
+> **Governance is design, not paperwork.** A control you cannot point at in the architecture is a control you do not have. Every framework clause in this module resolves to a component, a boundary, a log, an approval gate, or a named owner — something a reviewer can inspect. If a requirement does not change the system diagram, you have not finished translating it.
 
-## Learning objectives
+The thread running through every chapter: **regulated domains are a parameter, not a special case.** A healthcare deployment under HIPAA, a finance deployment under GLBA/SOX/PCI, a public-sector deployment, and an edtech deployment under FERPA/COPPA are not four unrelated problems — they are one governed architecture with four different settings of the same dials (privacy, residency, auditability, accountability, retention). Learn the dials once and you can re-tune the same platform for any regime, instead of rebuilding it per statute.
 
-- **Apply AI governance frameworks** (e.g., ISO/IEC 42001, NIST AI RMF) to an agentic architecture — mapping clauses and functions to concrete components, boundaries, and controls.
-- **Translate regulated-domain constraints into architecture**: data privacy, auditability, and accountability become data-flow boundaries, immutable audit logs, and named-owner decision records.
-- **Drive plugin/extension governance** for an agentic platform: how third-party and first-party plugins are evaluated, versioned, approved, monitored, and revoked so an extensible platform stays a governed one.
-- **Design for sensitive end-users and sectors** — K-12 edtech as the worked case: FERPA and COPPA, safety for minors, human-in-the-loop on student-facing output, and hallucination containment in instructional content.
-- **Produce governance, accountability, and risk-control specifications** for agent fleets that an operator can run against and an auditor can review.
+## 🎯 Purpose
+
+This module pitches up from *building* compliant features to *architecting* a governable platform. You will:
+
+- Adopt a **horizontal AI governance frame** (ISO/IEC 42001, NIST AI RMF, EU AI Act risk tiers) and map its clauses and functions onto a concrete agentic architecture — before any sector enters the picture.
+- Learn the **statute-independent translation method**: how to turn any regulatory constraint — privacy, residency, auditability, accountability, retention — into a component, boundary, log, or owner.
+- Map **one architecture against multiple regimes at once** and reason about where controls *converge* (build once) versus *diverge* (parameterize), treating healthcare, finance, public sector, and edtech as equal peers.
+- Govern the **extension surface** — third-party and first-party agent tools and plugins — through an evaluate → version → approve → monitor lifecycle, so an extensible platform stays a governed one.
+- Produce the **governance, accountability, and risk-control specifications** (lineage, audit trails, human-accountability points) a fleet operator runs against and an auditor reviews.
 
 ## Lecture chapters
 
-1. [Governance Frameworks for Agentic Systems](01-governance-frameworks.md) — ISO/IEC 42001 as an AI management system, the NIST AI RMF functions, and how to map their clauses onto a real agentic architecture.
-2. [Regulated-Domain Constraints as Architecture](02-regulated-domain-as-architecture.md) — turning privacy, auditability, and accountability requirements into data-flow boundaries, immutable logs, and decision ownership.
-3. [Plugin and Extension Governance](03-plugin-extension-governance.md) — the evaluate → approve → version → monitor → revoke lifecycle that keeps an extensible agent platform from becoming an ungoverned one.
-4. [Designing for Sensitive End-Users: K-12 Edtech](04-sensitive-sectors-k12-edtech.md) — FERPA/COPPA, safety for minors, human-in-the-loop on student-facing output, and hallucination containment in instructional content.
-5. [Governance, Accountability & Risk-Control Specs for Agent Fleets](05-fleet-governance-and-risk-specs.md) — writing the specifications, RACI, risk register, and control catalog that govern a fleet at scale.
+| # | Chapter | Focus |
+| --- | --- | --- |
+| 1 | [Horizontal AI Governance Frameworks](01-horizontal-governance-frameworks.md) | ISO/IEC 42001 as an AI management system, the NIST AI RMF functions, and EU AI Act risk tiers — applied to an agentic architecture, sector-neutral. |
+| 2 | [Regulated Domain as Architecture](02-regulated-domain-as-architecture.md) | The generic translation method: turning privacy, residency, auditability, accountability, and retention constraints into architecture, independent of any single statute. |
+| 3 | [Multi-Regime Mapping](03-multi-regime-mapping.md) | One architecture against multiple regimes; convergence vs. divergence; healthcare, finance, public sector, and edtech as balanced peers. |
+| 4 | [Extension and Tool Governance](04-extension-and-tool-governance.md) | Governing agent extensions, plugins, and tools through evaluate → version → approve → monitor, for both third-party and internal components. |
+| 5 | [Fleet Governance and Accountability Specs](05-fleet-governance-and-accountability-specs.md) | Lineage, audit trails, and human-accountability points — the specifications that govern an agent fleet at scale. |
 
 ## Exercises
 
-Hands-on practice. These are architecture and specification deliverables, not code. Reference solutions live in the paired [solutions repo](https://github.com/ai-infra-curriculum/ai-infra-agentic-systems-architect-solutions).
+Hands-on architecture and specification practice — control maps, comparison tables, lifecycle designs, and specs, not framework wiring. Reference solutions live in the paired [solutions repo](https://github.com/ai-infra-curriculum/ai-infra-agentic-systems-architect-solutions).
 
-- [exercise-01: ISO/IEC 42001 controls mapping](exercises/exercise-01-iso-42001-controls-mapping.md) — map the standard's clauses and Annex A controls onto a concrete agentic platform.
-- [exercise-02: Plugin lifecycle governance](exercises/exercise-02-plugin-lifecycle-governance.md) — design the evaluate/approve/version/monitor/revoke lifecycle and its gates.
-- [exercise-03: Regulated-domain architecture (FERPA/COPPA)](exercises/exercise-03-regulated-domain-architecture-ferpa-coppa.md) — translate the regulations into data-flow boundaries, logging, and accountability.
-- [exercise-04: K-12 edtech agentic constraints](exercises/exercise-04-k12-edtech-agentic-constraints.md) — design HITL, minor-safety, and hallucination-containment controls for student-facing agents.
-- [exercise-05: Governance & accountability spec](exercises/exercise-05-governance-and-accountability-spec.md) — produce the fleet-level governance, RACI, and risk-control specification.
+| # | Exercise | Deliverable |
+| --- | --- | --- |
+| 1 | [Horizontal framework controls mapping](exercises/exercise-01-horizontal-framework-controls-mapping.md) | Map an agentic system onto ISO/IEC 42001 + NIST AI RMF controls, sector-neutral. |
+| 2 | [Multi-regime regulated-domain architecture](exercises/exercise-02-multi-regime-regulated-domain-architecture.md) | One reference agent; control deltas across healthcare, finance, public sector, and edtech as equal peers, plus a convergence/divergence table. |
+| 3 | [Extension and tool governance lifecycle](exercises/exercise-03-extension-tool-governance-lifecycle.md) | Design evaluate → version → approve → monitor for third-party and internal agent tools/plugins. |
+| 4 | [Governance and accountability spec](exercises/exercise-04-governance-accountability-spec.md) | Author the lineage, audit-trail, and human-accountability spec for an agent fleet. |
+| 5 | [Data-handling and residency design](exercises/exercise-05-data-handling-residency-design.md) | Design privacy/residency/retention controls parameterized by regime, not hardcoded to one. |
+
+## Assessment
+
+- [Quiz 1 — Governance, Compliance & Regulated-Domain Architecture](quizzes/quiz-01-governance-compliance-domain.md) — covers all five chapters.
 
 ## Prerequisites
 
-- [mod-306: Guardrails, Safety & Security](../mod-306-guardrails-safety-security/README.md) — the technical controls (input/output filtering, tool scoping, sandboxing) that governance clauses will reference.
-- [mod-308: Deployment, Durable Execution & Human-in-the-Loop](../mod-308-deployment-durable-execution/README.md) — HITL approval flows and fleet operation, which this module governs.
+This is the **architect** rung. It assumes you can already build agents, tools, and RAG pipelines — those skills are owned by the lower [Senior Agentic AI Engineer](https://github.com/ai-infra-curriculum/ai-infra-agentic-ai-engineer-learning) (L30) track and are linked, not re-taught. Here you decide *whether, where, and how* governance belongs in a production architecture.
+
+Within this track:
+
+- [mod-306: Guardrails, Safety & Security](../mod-306-guardrails-safety-security/README.md) — the technical controls (input/output filtering, tool scoping, sandboxing) that governance clauses reference and require.
+- [mod-308: Deployment, Durable Execution & Human-in-the-Loop](../mod-308-deployment-durable-execution/README.md) — the durable HITL approval flows and fleet operation that this module governs and audits.
 - [mod-305: Observability & Tracing](../mod-305-observability-tracing/README.md) — the traces and logs that make auditability real rather than aspirational.
+
+## How this module fits
+
+Governance is the connective tissue across the architect track. The guardrails of mod-306 become the *controls* a framework clause points at; the HITL gates of mod-308 become *accountability points* in an audit trail; the traces of mod-305 become the *lineage* an auditor replays. This module gives you the frame that ties them together — and the discipline to express any regulatory requirement, in any sector, as something a reviewer can inspect in the architecture itself.
 
 See [resources.md](resources.md) for the primary standards and regulatory sources. **Cite the primary source, not a blog summary** — in governance work, the clause number is the evidence.

@@ -1,36 +1,58 @@
 # Resources for mod-309-governance-compliance-domain
 
-Primary sources for AI governance, compliance, and domain constraints. **In governance work, cite the primary source — the clause or section number is the evidence.** Verify against the current text; standards and regulations are revised.
+Primary references for AI governance and regulated-domain architecture. **Cite the primary source, not a blog summary** — in governance work, the clause number is the evidence. These regimes evolve; verify against the current official text.
 
-## AI governance frameworks
+The resources lead with the **horizontal** frameworks (which apply to any AI system in any sector), then list the regulated sectors as **balanced peers** — healthcare, finance, public sector, and edtech — none of them the default frame.
 
-- **ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system** ([iso.org/standard/42001](https://www.iso.org/standard/42001.html)) — the certifiable AI management system (AIMS) standard. Clauses 4–10 are the auditable requirements; Annex A is the reference control set; Annex B is implementation guidance; Annex C lists objectives and risk sources. The normative text is paywalled; purchase or access via your organization's standards subscription.
-- **NIST AI Risk Management Framework (AI RMF 1.0), NIST AI 100-1** ([nist.gov/itl/airc/ai-risk-management-framework](https://www.nist.gov/itl/airc/ai-risk-management-framework) · PDF: [doi.org/10.6028/NIST.AI.100-1](https://doi.org/10.6028/NIST.AI.100-1)) — the GOVERN / MAP / MEASURE / MANAGE functions. Free. Start here for operational risk vocabulary.
-- **NIST AI RMF Generative AI Profile, NIST AI 600-1** ([doi.org/10.6028/NIST.AI.600-1](https://doi.org/10.6028/NIST.AI.600-1)) — risks specific to generative (and agentic) systems: confabulation/hallucination, data leakage, harmful content, automation-amplified harm. Use as the risk catalog for the MAP function.
-- **NIST AI RMF Playbook & crosswalks** ([airc.nist.gov/AI_RMF_Knowledge_Base/Playbook](https://airc.nist.gov/AI_RMF_Knowledge_Base/Playbook)) — actionable suggestions per subcategory and crosswalks to ISO/IEC 42001 and other frameworks.
+## Horizontal AI governance frameworks
 
-## Privacy regulations (primary sources — U.S.)
+- **ISO/IEC 42001 — AI Management System (AIMS)** ([iso.org/standard/42001](https://www.iso.org/standard/42001)) — the certifiable management-system standard: policies, roles, Annex A controls, Plan-Do-Check-Act. The reference model for the clause-to-component mapping in Chapter 1.
+- **NIST AI Risk Management Framework (AI RMF 1.0)** ([nist.gov/itl/ai-risk-management-framework](https://www.nist.gov/itl/ai-risk-management-framework)) — the Govern / Map / Measure / Manage functions. The risk *process* of Chapter 1.
+- **NIST AI RMF — Generative AI Profile (NIST AI 600-1)** ([nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)) — maps the RMF onto generative/agentic risks (confabulation, prompt injection, data leakage, autonomy). Directly relevant to the agentic stresses in Chapter 1.
+- **EU AI Act — official text (Regulation (EU) 2024/1689)** ([eur-lex.europa.eu/eli/reg/2024/1689/oj](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)) — the risk-tier model (unacceptable / high / limited / minimal) and per-tier obligations. The classification logic reused in Chapter 3.
+- **EU AI Act Explorer** ([artificialintelligenceact.eu](https://artificialintelligenceact.eu/)) — navigable companion to the Act's articles and annexes; useful for locating the obligation that attaches to a tier.
+- **ISO/IEC 23894 — AI risk management guidance** ([iso.org/standard/77304.html](https://www.iso.org/standard/77304.html)) — complements 42001 with risk-management guidance aligned to ISO 31000; a bridge between 42001 and NIST RMF.
+- **OECD AI Principles** ([oecd.ai/en/ai-principles](https://oecd.ai/en/ai-principles)) — the high-level principles (accountability, transparency, robustness) that the frameworks above operationalize.
 
-- **FERPA — Family Educational Rights and Privacy Act**, 20 U.S.C. § 1232g ([law.cornell.edu/uscode/text/20/1232g](https://www.law.cornell.edu/uscode/text/20/1232g)); implementing regulations at **34 CFR Part 99** ([ecfr.gov/current/title-34/subtitle-A/part-99](https://www.ecfr.gov/current/title-34/subtitle-A/part-99)). The "school official" exception is **34 CFR § 99.31(a)(1)**. U.S. Dept. of Education Student Privacy Policy Office: [studentprivacy.ed.gov](https://studentprivacy.ed.gov).
-- **COPPA — Children's Online Privacy Protection Act**, 15 U.S.C. §§ 6501–6506 ([law.cornell.edu/uscode/text/15/chapter-91](https://www.law.cornell.edu/uscode/text/15/chapter-91)); the FTC's **COPPA Rule at 16 CFR Part 312** ([ecfr.gov/current/title-16/chapter-I/subchapter-C/part-312](https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-312)). FTC guidance hub: [ftc.gov/business-guidance/privacy-security/childrens-privacy](https://www.ftc.gov/business-guidance/privacy-security/childrens-privacy). See the FTC's "COPPA and Schools" guidance for school-provided consent in the educational context.
-- **HIPAA — Health Insurance Portability and Accountability Act**, Privacy Rule at **45 CFR Parts 160 and 164** ([hhs.gov/hipaa](https://www.hhs.gov/hipaa)) — for the pediatric-health analogue of the K-12 case.
-- **CCPA/CPRA — California Consumer Privacy Act, as amended** ([oag.ca.gov/privacy/ccpa](https://oag.ca.gov/privacy/ccpa)); **SOPIPA — Student Online Personal Information Protection Act**, Cal. B&P Code §§ 22584–22585 — a state-law layer on top of FERPA/COPPA for California districts.
+## Translating constraints into architecture
 
-## Privacy regulations (primary sources — EU)
+- **NIST Privacy Framework** ([nist.gov/privacy-framework](https://www.nist.gov/privacy-framework)) — a structured way to turn the *privacy* primitive (Chapter 2) into identify/govern/control/communicate/protect functions.
+- **NIST SP 800-53 — Security and Privacy Controls** ([csrc.nist.gov/pubs/sp/800/53/r5/upd1/final](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final)) — a deep control catalog for the auditability, accountability, and retention primitives; map clauses to components.
+- **Cloud data-residency / sovereignty guidance (provider-neutral)** — consult your cloud provider's data-residency and sovereign-cloud documentation for the *residency* primitive; treat the model endpoint, vector store, tool backends, and trace pipeline all as in-scope (Chapter 2).
 
-- **GDPR — General Data Protection Regulation (EU) 2016/679** ([eur-lex.europa.eu/eli/reg/2016/679/oj](https://eur-lex.europa.eu/eli/reg/2016/679/oj)) — Article 22 restricts solely-automated decisions with significant effects; principles in Articles 5–6 (minimization, purpose limitation, lawful basis) map directly to Chapter 2's boundaries.
-- **EU AI Act — Regulation (EU) 2024/1689** ([eur-lex.europa.eu/eli/reg/2024/1689/oj](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)) — the risk-tiered AI regulation: prohibited practices, high-risk system obligations (risk management, data governance, human oversight, logging, transparency), and GPAI provisions. The risk-tiering and human-oversight requirements parallel this module's tier model and HITL gates.
+## Healthcare (HIPAA) — peer sector
 
-## Mapping standards to architecture
+- **HHS — HIPAA Privacy & Security Rules** ([hhs.gov/hipaa](https://www.hhs.gov/hipaa/index.html)) — protected health information (PHI), minimum-necessary, and the safeguards behind the healthcare parameters in Chapters 2–3.
+- **HHS — HIPAA Security Rule guidance** ([hhs.gov/hipaa/for-professionals/security](https://www.hhs.gov/hipaa/for-professionals/security/index.html)) — administrative/physical/technical safeguards; maps to the convergent audit-log and access controls.
 
-- **NIST AI RMF Knowledge Base** ([airc.nist.gov](https://airc.nist.gov)) — crosswalks, use-case profiles, and the trustworthiness characteristics (valid/reliable, safe, secure, accountable, explainable, privacy-enhanced, fair) that translate into controls.
-- **ISO/IEC 23894:2023 — Guidance on AI risk management** ([iso.org/standard/77304](https://www.iso.org/standard/77304.html)) — companion risk-management guidance to ISO/IEC 42001.
-- **ISO/IEC 27001 / 27002** ([iso.org/standard/27001](https://www.iso.org/standard/27001.html)) — the ISMS the AIMS bolts onto; its Annex A structure is the model for ISO/IEC 42001's.
+## Finance (GLBA / SOX / PCI) — peer sector
 
-## Agent-specific governance and safety
+- **FTC — Gramm-Leach-Bliley Act (GLBA) / Safeguards Rule** ([ftc.gov/business-guidance/privacy-security/gramm-leach-bliley-act](https://www.ftc.gov/business-guidance/privacy-security/gramm-leach-bliley-act)) — financial-data privacy scope.
+- **Sarbanes-Oxley (SOX) — SEC overview** ([sec.gov](https://www.sec.gov/)) — internal-control and audit-record integrity/retention; the SOX "attestation" structural delta in Chapter 3.
+- **PCI DSS — PCI Security Standards Council** ([pcisecuritystandards.org](https://www.pcisecuritystandards.org/)) — cardholder-data handling and scope reduction; the PCI "card-data scope" structural delta in Chapter 3.
 
-- **OWASP Top 10 for LLM Applications & GenAI** ([genai.owasp.org](https://genai.owasp.org)) — concrete threat catalog (prompt injection, insecure plugin design, excessive agency, supply-chain) that your plugin-governance and tool-scoping controls mitigate.
-- **NIST SP 800-218A — Secure Software Development Practices for Generative AI** ([doi.org/10.6028/NIST.SP.800-218A](https://doi.org/10.6028/NIST.SP.800-218A)) — life-cycle secure-development practices that feed the 42001 Annex A life-cycle controls.
-- **Anthropic — Building effective agents** ([anthropic.com/engineering/building-effective-agents](https://www.anthropic.com/engineering/building-effective-agents)) — the agent patterns this module governs; read for the architecture being constrained.
+## Public sector — peer sector
 
-> Many of these (ISO standards in particular) are paywalled. Where you cannot obtain the normative text, use NIST AI 100-1 and the official regulatory texts on eCFR/EUR-Lex — they are free, authoritative, and citable by section number.
+- **NIST SP 800-53 / FedRAMP** ([fedramp.gov](https://www.fedramp.gov/)) — public-sector control baselines and authorization; the residency/sovereignty and auditability emphasis in Chapter 3.
+- **Public-records and transparency law (jurisdiction-specific)** — consult the applicable records-management, freedom-of-information, and procurement rules for your jurisdiction; these drive the "public-records disclosure" structural delta.
+
+## Edtech (FERPA / COPPA) — peer sector
+
+- **U.S. Dept. of Education — FERPA** ([studentprivacy.ed.gov](https://studentprivacy.ed.gov/)) — education-record privacy and the institutional-accountability parameters.
+- **FTC — COPPA (Children's Online Privacy Protection)** ([ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa](https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa)) — verifiable parental consent for minors; the "minor-consent" structural delta in Chapter 3.
+
+## Cross-border privacy (a fifth peer to test convergence)
+
+- **GDPR — official text** ([gdpr-info.eu](https://gdpr-info.eu/)) — data-subject rights (including erasure), purpose limitation, and cross-border transfer; a useful fifth regime for the stretch goals in exercises 02 and 05.
+
+## Extension and fleet governance
+
+- **Anthropic — Building effective agents** ([anthropic.com/engineering/building-effective-agents](https://www.anthropic.com/engineering/building-effective-agents)) — where human checkpoints and tool boundaries sit in the agent taxonomy; framing for the gate-placement and extension-governance discipline in Chapters 4–5.
+- **Model Context Protocol (MCP)** ([modelcontextprotocol.io](https://modelcontextprotocol.io/)) — the interface model for third-party tools/servers the extension lifecycle (Chapter 4) must govern: version-pin, scope, monitor, revoke.
+- **OWASP Top 10 for LLM Applications** ([owasp.org/www-project-top-10-for-large-language-model-applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)) — the supply-chain, excessive-agency, and data-leakage risks that the Evaluate gate and monitoring of Chapter 4 are designed to catch.
+
+## Within this track
+
+- [mod-305: Observability & Tracing](../mod-305-observability-tracing/README.md) — the traces and metrics that become audit evidence and drift signals.
+- [mod-306: Guardrails, Safety & Security](../mod-306-guardrails-safety-security/README.md) — the technical controls a framework clause points at.
+- [mod-308: Deployment, Durable Execution & Human-in-the-Loop](../mod-308-deployment-durable-execution/README.md) — the durable HITL gates and immutable run history that lineage, audit trails, and accountability points build on.

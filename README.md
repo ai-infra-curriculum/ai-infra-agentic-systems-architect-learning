@@ -23,8 +23,8 @@ The 10 modules form the **production-hardening spine** that introductory agent c
 - **Guardrails, safety & security** — guardrail placement, prompt-injection threat modeling, least-privilege tool permissions, OAuth/RBAC token management, CLI-agent sandboxing, and excessive-agency controls.
 - **Cost & latency architecture** — token economics, caching and routing, and cost/latency/quality budgets.
 - **Deployment & durable execution** — durable workflows, human-in-the-loop approval boundaries, agent-fleet deployment, failure recovery and resumption.
-- **Governance & compliance** — ISO/IEC 42001 control mapping, plugin lifecycle governance, regulated-domain (FERPA/COPPA, K-12 EdTech) constraints, and accountability specs.
-- **Agentic developer platforms / AI-for-SDLC** — plugin architecture (agents, skills, hooks, MCP), tool-use patterns, context hydration, DevOps-toolchain integration, and developer-experience adoption.
+- **Governance & compliance** — horizontal frameworks (ISO/IEC 42001, NIST AI RMF, EU AI Act), regulated-domain constraints mapped across multiple regimes (healthcare, finance, public sector, and edtech as peers), extension/tool governance, and accountability specs.
+- **Agentic developer & internal platforms** — extension models (agents, skills, hooks, MCP) across multiple platforms, secure tool-use and context hydration, workflow-toolchain integration, and developer-experience adoption — SDLC as one worked example among internal platforms.
 
 Throughout, you decide *whether and how* each capability belongs in the architecture — the discipline of "start simple, add complexity only when it demonstrably improves outcomes."
 
@@ -42,8 +42,8 @@ Throughout, you decide *whether and how* each capability belongs in the architec
 | [mod-306](./lessons/mod-306-guardrails-safety-security/README.md) | Guardrails, Safety & Security | 20 | 6 | Yes |
 | [mod-307](./lessons/mod-307-cost-latency-architecture/README.md) | Cost & Latency Architecture | 10 | 3 | Yes |
 | [mod-308](./lessons/mod-308-deployment-durable-execution/README.md) | Deployment, Durable Execution & Human-in-the-Loop | 12 | 4 | Yes |
-| [mod-309](./lessons/mod-309-governance-compliance-domain/README.md) | Governance, Compliance & Domain Constraints | 15 | 5 | Yes |
-| [mod-310](./lessons/mod-310-agentic-developer-platforms/README.md) | Agentic Developer Platforms & SDLC Integration | 16 | 5 | Yes |
+| [mod-309](./lessons/mod-309-governance-compliance-domain/README.md) | Governance, Compliance & Regulated-Domain Architecture | 15 | 5 | Yes |
+| [mod-310](./lessons/mod-310-agentic-developer-platforms/README.md) | Agentic Developer & Internal Platforms | 16 | 5 | Yes |
 
 **Totals:** 10 modules · 133 hours · 42 exercises · 10 quizzes.
 
@@ -56,8 +56,8 @@ Multi-module capstones that integrate the spine into end-to-end architecture del
 | Project | Focus | Hours |
 |---------|-------|-------|
 | [project-301](./projects/project-301-production-agentic-reference-architecture/README.md) | End-to-End Agentic Reference Architecture (capstone) | 30 |
-| [project-302](./projects/project-302-regulated-domain-agent-architecture/README.md) | Regulated-Domain Agentic Architecture (e.g., K-12 EdTech) | 20 |
-| [project-303](./projects/project-303-agentic-sdlc-platform/README.md) | Agentic AI-for-SDLC Platform (Plugin Architecture) | 25 |
+| [project-302](./projects/project-302-regulated-domain-agent-architecture/README.md) | Regulated-Domain Agentic Architecture (learner-selected sector) | 20 |
+| [project-303](./projects/project-303-extensible-agent-platform/README.md) | Extensible Agent Platform (platform-neutral) | 25 |
 
 ---
 
@@ -126,13 +126,13 @@ Build token-economics cost models; architect caching and routing; define and def
 
 Design durable execution for long-running agents; architect human-in-the-loop approval boundaries; plan agent-fleet deployment strategies and failure recovery and resumption.
 
-### mod-309: Governance, Compliance & Domain Constraints
+### mod-309: Governance, Compliance & Regulated-Domain Architecture
 
-Map ISO/IEC 42001 controls; govern the plugin lifecycle; architect regulated-domain systems under FERPA/COPPA and K-12 EdTech constraints; produce fleet-level governance, RACI, and risk-control specifications.
+Apply horizontal AI-governance frameworks (ISO/IEC 42001, NIST AI RMF, EU AI Act); translate regulated-domain constraints into architecture and map one system across multiple regimes (healthcare, finance, public sector, and edtech as peers); govern agent extensions/tools; produce fleet-level governance, accountability, and risk-control specifications.
 
-### mod-310: Agentic Developer Platforms & SDLC Integration
+### mod-310: Agentic Developer & Internal Platforms
 
-Design plugin architectures (agents, skills, hooks, MCP); apply AI-for-SDLC tool-use patterns; architect context-hydration strategies; integrate the DevOps toolchain and drive developer-tooling adoption and DX.
+Design extensible agent-platform architectures using a generic extension model (agents, skills, hooks, MCP) mapped across multiple platforms; build secure tool-use and context-hydration patterns; integrate workflow toolchains; drive platform adoption and DX — with SDLC as one worked example and a non-SDLC case proving the pattern generalizes.
 
 ---
 

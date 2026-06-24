@@ -3,7 +3,7 @@
   "role_id": "agentic-systems-architect",
   "title": "Agentic Systems Architect",
   "level": 48,
-  "notes": "Design-altitude track for production agentic AI systems. Module spine is the production-hardening 'altitude gap' that intro agent courses skip. Build-altitude fundamentals (agent loops, framework mechanics, RAG implementation) are owned by the lower-level `agentic-ai-engineer` track (level 30) and linked, not duplicated. Languages: examples in both TypeScript/Node.js and Python (agentic dev-tooling is heavily TS/Node). Seeded from role research 2026-06-14; job-market evidence and the verbatim Imagine Learning posting requirements are tracked in JOB_REQUIREMENTS.md / .aicg/job-requirements.json, with a requirement->module traceability map. Refine on first nightly research cycle.",
+  "notes": "Design-altitude track for production agentic AI systems. Module spine is the production-hardening 'altitude gap' that intro agent courses skip. Build-altitude fundamentals (agent loops, framework mechanics, RAG implementation) are owned by the lower-level `agentic-ai-engineer` track (level 30) and linked, not duplicated. Languages: examples in both TypeScript/Node.js and Python. Derived generically from the broad agentic-architect market (consulting/SI, enterprise-platform, security/governance, and product-agent archetypes); not anchored to any single employer, sector, or tool.",
   "modules": [
     {
       "id": "mod-301-agentic-systems-foundations",
@@ -16,10 +16,26 @@
         "Frame the 'start simple, add complexity only when it demonstrably improves outcomes' discipline"
       ],
       "exercises": [
-        {"id": "exercise-01", "slug": "workflows-vs-agents-decision-matrix", "hours": 2},
-        {"id": "exercise-02", "slug": "orchestration-pattern-catalog", "hours": 3},
-        {"id": "exercise-03", "slug": "tool-vs-subagent-decomposition", "hours": 3},
-        {"id": "exercise-04", "slug": "reference-architecture-teardown", "hours": 3}
+        {
+          "id": "exercise-01",
+          "slug": "workflows-vs-agents-decision-matrix",
+          "hours": 2
+        },
+        {
+          "id": "exercise-02",
+          "slug": "orchestration-pattern-catalog",
+          "hours": 3
+        },
+        {
+          "id": "exercise-03",
+          "slug": "tool-vs-subagent-decomposition",
+          "hours": 3
+        },
+        {
+          "id": "exercise-04",
+          "slug": "reference-architecture-teardown",
+          "hours": 3
+        }
       ],
       "labs": [],
       "quizzes": 1
@@ -35,10 +51,26 @@
         "Define escalation and coordination strategies across a multi-agent system"
       ],
       "exercises": [
-        {"id": "exercise-01", "slug": "orchestrator-worker-topology-design", "hours": 3},
-        {"id": "exercise-02", "slug": "handoffs-vs-manager-as-tools", "hours": 3},
-        {"id": "exercise-03", "slug": "mcp-a2a-integration-architecture", "hours": 4},
-        {"id": "exercise-04", "slug": "coordination-and-escalation-design", "hours": 4}
+        {
+          "id": "exercise-01",
+          "slug": "orchestrator-worker-topology-design",
+          "hours": 3
+        },
+        {
+          "id": "exercise-02",
+          "slug": "handoffs-vs-manager-as-tools",
+          "hours": 3
+        },
+        {
+          "id": "exercise-03",
+          "slug": "mcp-a2a-integration-architecture",
+          "hours": 4
+        },
+        {
+          "id": "exercise-04",
+          "slug": "coordination-and-escalation-design",
+          "hours": 4
+        }
       ],
       "labs": [],
       "quizzes": 1
@@ -54,10 +86,26 @@
         "Integrate RAG and vector/knowledge-graph stores as an architectural concern"
       ],
       "exercises": [
-        {"id": "exercise-01", "slug": "context-budget-and-rot-analysis", "hours": 3},
-        {"id": "exercise-02", "slug": "memory-tier-placement-design", "hours": 3},
-        {"id": "exercise-03", "slug": "compaction-and-notetaking-strategy", "hours": 3},
-        {"id": "exercise-04", "slug": "rag-architecture-for-agents", "hours": 3}
+        {
+          "id": "exercise-01",
+          "slug": "context-budget-and-rot-analysis",
+          "hours": 3
+        },
+        {
+          "id": "exercise-02",
+          "slug": "memory-tier-placement-design",
+          "hours": 3
+        },
+        {
+          "id": "exercise-03",
+          "slug": "compaction-and-notetaking-strategy",
+          "hours": 3
+        },
+        {
+          "id": "exercise-04",
+          "slug": "rag-architecture-for-agents",
+          "hours": 3
+        }
       ],
       "labs": [],
       "quizzes": 1
@@ -73,10 +121,26 @@
         "Define an offline/online eval strategy that gates deployment"
       ],
       "exercises": [
-        {"id": "exercise-01", "slug": "trajectory-eval-design", "hours": 3},
-        {"id": "exercise-02", "slug": "tool-call-correctness-harness", "hours": 3},
-        {"id": "exercise-03", "slug": "llm-as-judge-rubric", "hours": 3},
-        {"id": "exercise-04", "slug": "eval-gated-release-pipeline", "hours": 3}
+        {
+          "id": "exercise-01",
+          "slug": "trajectory-eval-design",
+          "hours": 3
+        },
+        {
+          "id": "exercise-02",
+          "slug": "tool-call-correctness-harness",
+          "hours": 3
+        },
+        {
+          "id": "exercise-03",
+          "slug": "llm-as-judge-rubric",
+          "hours": 3
+        },
+        {
+          "id": "exercise-04",
+          "slug": "eval-gated-release-pipeline",
+          "hours": 3
+        }
       ],
       "labs": [],
       "quizzes": 1
@@ -92,9 +156,21 @@
         "Evaluate platforms (LangSmith, Langfuse, Arize Phoenix) against requirements"
       ],
       "exercises": [
-        {"id": "exercise-01", "slug": "otel-genai-span-design", "hours": 3},
-        {"id": "exercise-02", "slug": "quality-and-drift-signals", "hours": 3},
-        {"id": "exercise-03", "slug": "observability-platform-evaluation", "hours": 3}
+        {
+          "id": "exercise-01",
+          "slug": "otel-genai-span-design",
+          "hours": 3
+        },
+        {
+          "id": "exercise-02",
+          "slug": "quality-and-drift-signals",
+          "hours": 3
+        },
+        {
+          "id": "exercise-03",
+          "slug": "observability-platform-evaluation",
+          "hours": 3
+        }
       ],
       "labs": [],
       "quizzes": 1
@@ -112,12 +188,36 @@
         "Architect segregation of untrusted content and adversarial testing into the system"
       ],
       "exercises": [
-        {"id": "exercise-01", "slug": "guardrail-placement-architecture", "hours": 3},
-        {"id": "exercise-02", "slug": "prompt-injection-threat-model", "hours": 4},
-        {"id": "exercise-03", "slug": "least-privilege-tool-permissions", "hours": 3},
-        {"id": "exercise-04", "slug": "oauth-rbac-token-management-for-toolchains", "hours": 3},
-        {"id": "exercise-05", "slug": "cli-agent-sandboxing-local-and-remote", "hours": 3},
-        {"id": "exercise-06", "slug": "excessive-agency-controls", "hours": 4}
+        {
+          "id": "exercise-01",
+          "slug": "guardrail-placement-architecture",
+          "hours": 3
+        },
+        {
+          "id": "exercise-02",
+          "slug": "prompt-injection-threat-model",
+          "hours": 4
+        },
+        {
+          "id": "exercise-03",
+          "slug": "least-privilege-tool-permissions",
+          "hours": 3
+        },
+        {
+          "id": "exercise-04",
+          "slug": "oauth-rbac-token-management-for-toolchains",
+          "hours": 3
+        },
+        {
+          "id": "exercise-05",
+          "slug": "cli-agent-sandboxing-local-and-remote",
+          "hours": 3
+        },
+        {
+          "id": "exercise-06",
+          "slug": "excessive-agency-controls",
+          "hours": 4
+        }
       ],
       "labs": [],
       "quizzes": 1
@@ -133,9 +233,21 @@
         "Trade off latency, cost, and quality with explicit budgets"
       ],
       "exercises": [
-        {"id": "exercise-01", "slug": "token-economics-cost-model", "hours": 3},
-        {"id": "exercise-02", "slug": "caching-and-routing-architecture", "hours": 3},
-        {"id": "exercise-03", "slug": "cost-latency-quality-budgets", "hours": 4}
+        {
+          "id": "exercise-01",
+          "slug": "token-economics-cost-model",
+          "hours": 3
+        },
+        {
+          "id": "exercise-02",
+          "slug": "caching-and-routing-architecture",
+          "hours": 3
+        },
+        {
+          "id": "exercise-03",
+          "slug": "cost-latency-quality-budgets",
+          "hours": 4
+        }
       ],
       "labs": [],
       "quizzes": 1
@@ -151,52 +263,108 @@
         "Plan scaling and failure recovery for agent fleets"
       ],
       "exercises": [
-        {"id": "exercise-01", "slug": "durable-execution-design", "hours": 3},
-        {"id": "exercise-02", "slug": "hitl-approval-architecture", "hours": 3},
-        {"id": "exercise-03", "slug": "agent-fleet-deployment-strategy", "hours": 3},
-        {"id": "exercise-04", "slug": "failure-recovery-and-resumption", "hours": 3}
+        {
+          "id": "exercise-01",
+          "slug": "durable-execution-design",
+          "hours": 3
+        },
+        {
+          "id": "exercise-02",
+          "slug": "hitl-approval-architecture",
+          "hours": 3
+        },
+        {
+          "id": "exercise-03",
+          "slug": "agent-fleet-deployment-strategy",
+          "hours": 3
+        },
+        {
+          "id": "exercise-04",
+          "slug": "failure-recovery-and-resumption",
+          "hours": 3
+        }
       ],
       "labs": [],
       "quizzes": 1
     },
     {
       "id": "mod-309-governance-compliance-domain",
-      "title": "Governance, Compliance & Domain Constraints",
+      "title": "Governance, Compliance & Regulated-Domain Architecture",
       "hours": 15,
       "objectives": [
-        "Apply AI governance frameworks (e.g., ISO/IEC 42001) to an agentic architecture",
-        "Translate regulated-domain constraints into architecture: data privacy, auditability, accountability",
-        "Drive plugin/extension governance for an agentic platform: how plugins are evaluated, versioned, approved, and monitored to prevent unauthorized system changes or quality degradation",
-        "Design for sensitive end-users and sectors (e.g., K-12 edtech: FERPA/COPPA, safety for minors, human-in-the-loop on student-facing output, hallucination containment in instructional content)",
-        "Produce governance, accountability, and risk-control specifications for agent fleets"
+        "Apply horizontal AI governance/risk frameworks (ISO/IEC 42001, NIST AI RMF, EU AI Act risk tiers) to an agentic architecture",
+        "Translate generic regulated-domain constraints — data privacy, residency, auditability, accountability, retention — into architecture, independent of any single statute",
+        "Map one architecture against multiple regulatory regimes and reason about where controls converge vs. diverge",
+        "Govern agent extensions/plugins/tools: how they are evaluated, versioned, approved, and monitored to prevent unauthorized change or quality drift",
+        "Produce governance, accountability, and risk-control specifications (model/data lineage, audit trails, human-accountability points) for an agent fleet"
       ],
       "exercises": [
-        {"id": "exercise-01", "slug": "iso-42001-controls-mapping", "hours": 3},
-        {"id": "exercise-02", "slug": "plugin-lifecycle-governance", "hours": 3},
-        {"id": "exercise-03", "slug": "regulated-domain-architecture-ferpa-coppa", "hours": 3},
-        {"id": "exercise-04", "slug": "k12-edtech-agentic-constraints", "hours": 3},
-        {"id": "exercise-05", "slug": "governance-and-accountability-spec", "hours": 3}
+        {
+          "id": "exercise-01",
+          "slug": "horizontal-framework-controls-mapping",
+          "hours": 3
+        },
+        {
+          "id": "exercise-02",
+          "slug": "multi-regime-regulated-domain-architecture",
+          "hours": 3
+        },
+        {
+          "id": "exercise-03",
+          "slug": "extension-tool-governance-lifecycle",
+          "hours": 3
+        },
+        {
+          "id": "exercise-04",
+          "slug": "governance-accountability-spec",
+          "hours": 3
+        },
+        {
+          "id": "exercise-05",
+          "slug": "data-handling-residency-design",
+          "hours": 3
+        }
       ],
       "labs": [],
       "quizzes": 1
     },
     {
       "id": "mod-310-agentic-developer-platforms",
-      "title": "Agentic Developer Platforms & SDLC Integration",
+      "title": "Agentic Developer & Internal Platforms",
       "hours": 16,
       "objectives": [
-        "Design a plugin-based architecture that extends an agentic coding tool (e.g., Claude Code) using its extension standards: Agents, Skills, Hooks, and the Model Context Protocol (MCP)",
-        "Architect AI systems for the software development lifecycle: securely interfacing an agent with internal SDLC toolchains and proprietary data to perform requirements analysis, code generation, and debugging autonomously",
-        "Build reliable tool-use patterns and context-hydration strategies that give an agent the precise system access and context to execute SDLC tasks",
-        "Integrate with core DevOps and project-management toolchains (GitHub, Jira, Confluence, CI/CD pipelines) over REST, GraphQL, and event-driven interfaces",
-        "Design developer-focused tooling with a strong emphasis on usability, adoption, onboarding, documentation, and continuous feedback loops"
+        "Design an extensible agent-platform architecture using a generic extension model (agents, skills/tools, hooks/lifecycle events, MCP), mapping the concepts across at least two real platforms",
+        "Architect agents that interface securely with internal toolchains and proprietary data to perform real work (analysis, generation, debugging, operations) — with SDLC as one worked example, not the only context",
+        "Build reliable tool-use and context-hydration patterns that give an agent precise, scoped system access",
+        "Integrate with core workflow toolchains (VCS, issue trackers, knowledge bases, CI/CD) over REST, GraphQL, and event-driven interfaces",
+        "Design platform-level developer experience: onboarding, adoption, documentation, versioning, and feedback loops"
       ],
       "exercises": [
-        {"id": "exercise-01", "slug": "plugin-architecture-agents-skills-hooks-mcp", "hours": 4},
-        {"id": "exercise-02", "slug": "ai-for-sdlc-tool-use-patterns", "hours": 4},
-        {"id": "exercise-03", "slug": "context-hydration-strategies", "hours": 3},
-        {"id": "exercise-04", "slug": "devops-toolchain-integration", "hours": 3},
-        {"id": "exercise-05", "slug": "developer-tooling-adoption-and-dx", "hours": 2}
+        {
+          "id": "exercise-01",
+          "slug": "extension-model-mapping-across-platforms",
+          "hours": 4
+        },
+        {
+          "id": "exercise-02",
+          "slug": "secure-tool-use-and-context-hydration",
+          "hours": 4
+        },
+        {
+          "id": "exercise-03",
+          "slug": "workflow-toolchain-integration",
+          "hours": 3
+        },
+        {
+          "id": "exercise-04",
+          "slug": "platform-adoption-and-dx-plan",
+          "hours": 3
+        },
+        {
+          "id": "exercise-05",
+          "slug": "non-sdlc-platform-case",
+          "hours": 2
+        }
       ],
       "labs": [],
       "quizzes": 1
@@ -207,19 +375,19 @@
       "id": "project-301-production-agentic-reference-architecture",
       "title": "Capstone: End-to-End Agentic Reference Architecture",
       "hours": 30,
-      "description": "Design (and prototype the orchestration of) a production agentic system — e.g., a deep-research or domain agent — that exercises every module: orchestrator-workers topology, memory/context engineering, a trajectory + tool-call eval harness, OTel tracing, two-sided guardrails, a cost/latency model, durable execution, human-in-the-loop, and a governance/compliance spec. Deliverables are an architecture decision record, reference diagram, eval plan, cost model, and threat model."
+      "description": "Design (and prototype the orchestration of) a production agentic system of the learner's choice — e.g., a deep-research agent, a data-operations agent, or a customer-facing assistant — that exercises every module: orchestrator-workers topology, memory/context engineering, a trajectory + tool-call eval harness, OTel tracing, two-sided guardrails, a cost/latency model, durable execution, human-in-the-loop, and a horizontal governance spec. Deliverables: an ADR set, reference diagram, eval plan, cost model, and threat model. Domain is learner-selected and not pre-anchored to any one sector."
     },
     {
       "id": "project-302-regulated-domain-agent-architecture",
-      "title": "Regulated-Domain Agentic Architecture (e.g., K-12 EdTech)",
+      "title": "Regulated-Domain Agentic Architecture (Learner-Selected Sector)",
       "hours": 20,
-      "description": "Produce a reference architecture for an agentic system under regulated-domain constraints: FERPA/COPPA data handling, safety guardrails for minors, human-in-the-loop on all end-user-facing output, hallucination containment grounded in vetted content, and toggleable AI features. Frames the governance posture an Agentic Systems Architect must own in a sensitive sector."
+      "description": "Produce a reference architecture for an agentic system under regulated-domain constraints, where the learner picks one sector from a balanced menu — healthcare (HIPAA), finance (GLBA/SOX/PCI), public sector, or edtech (FERPA/COPPA) — then writes a portability analysis showing which controls change if the same system were deployed in a different listed sector. Required across all choices: data-handling/residency controls, auditability and accountability, human-in-the-loop on high-risk output, hallucination containment grounded in vetted sources, and toggleable AI features. No single sector is privileged."
     },
     {
-      "id": "project-303-agentic-sdlc-platform",
-      "title": "Agentic AI-for-SDLC Platform (Plugin Architecture)",
+      "id": "project-303-extensible-agent-platform",
+      "title": "Extensible Agent Platform (Platform-Neutral)",
       "hours": 25,
-      "description": "Design a plugin-based platform that extends an agentic coding tool (e.g., Claude Code via Agents/Skills/Hooks/MCP) so the AI can securely interface with internal SDLC toolchains and proprietary data to perform requirements analysis, code generation, and debugging. Deliverables: plugin/extension architecture, secure auth & sandboxing model (OAuth/RBAC/token management, local+remote execution isolation, prompt-injection defenses), a plugin governance lifecycle (evaluate/version/approve/monitor), toolchain integrations (GitHub/Jira/Confluence/CI-CD), and a developer-adoption/DX plan. Mirrors the emerging enterprise 'Agentic Systems Architect' charter."
+      "description": "Design an extensible agent platform that lets agents securely interface with internal toolchains and proprietary data to perform real work. Target a generic host/extension model and justify it against at least one alternative platform (Claude Code, Cursor, Copilot, LangGraph Platform, or custom), explicitly addressing portability and lock-in. Deliverables: extension architecture (agents/tools/hooks/MCP), secure auth & sandboxing model (OAuth/RBAC-ABAC/token lifecycle, local+remote execution isolation, prompt-injection defenses), an extension governance lifecycle, toolchain integrations (VCS/issue-tracker/knowledge-base/CI-CD), and an adoption/DX plan. The worked domain may be SDLC or a non-developer internal workflow — learner's choice."
     }
   ]
 }
