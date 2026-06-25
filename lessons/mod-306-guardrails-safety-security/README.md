@@ -28,7 +28,7 @@ This is the largest module in the role because it is the one that gets you paged
 
 ## Exercises
 
-Hands-on design practice. Reference solutions live in the paired [solutions repo](https://github.com/ai-infra-curriculum/ai-infra-agentic-systems-architect-solutions).
+Hands-on design practice. Reference solutions live in the paired [solutions repo](https://github.com/ai-engineering-curriculum/agentic-systems-architect-solutions).
 
 - [exercise-01: Guardrail placement architecture](exercises/exercise-01-guardrail-placement-architecture.md) — place input, output, and per-tool-call guardrails on a real request path and justify each.
 - [exercise-02: Prompt injection threat model](exercises/exercise-02-prompt-injection-threat-model.md) — STRIDE-style threat model for a RAG agent exposed to indirect injection.

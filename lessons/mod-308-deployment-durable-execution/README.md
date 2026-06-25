@@ -24,7 +24,7 @@ The thread running through every chapter: **a long-running agent's state must ou
 
 ## Exercises
 
-Hands-on architecture practice — diagrams, state-machine specs, and runbooks, not framework wiring. Reference solutions live in the paired [solutions repo](https://github.com/ai-infra-curriculum/ai-infra-agentic-systems-architect-solutions).
+Hands-on architecture practice — diagrams, state-machine specs, and runbooks, not framework wiring. Reference solutions live in the paired [solutions repo](https://github.com/ai-engineering-curriculum/agentic-systems-architect-solutions).
 
 - [exercise-01: Durable execution design](exercises/exercise-01-durable-execution-design.md) — decompose a long-running agent into durable workflow + replaceable activities and defend the replay/idempotency boundaries.
 - [exercise-02: HITL approval architecture](exercises/exercise-02-hitl-approval-architecture.md) — design an approve/edit/reject/respond gate that survives an arbitrary wait and a process restart.

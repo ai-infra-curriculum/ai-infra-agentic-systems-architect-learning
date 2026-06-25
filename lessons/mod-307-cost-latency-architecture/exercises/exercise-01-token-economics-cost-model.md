@@ -121,7 +121,7 @@ if __name__ == "__main__":
     print(f"threshold holds: {threshold_holds(value_per_task, c, margin)}")
 ```
 
-A worked cost-model worksheet template (spreadsheet form) and the reference memo live in the [solutions repo](https://github.com/ai-infra-curriculum/ai-infra-agentic-systems-architect-solutions).
+A worked cost-model worksheet template (spreadsheet form) and the reference memo live in the [solutions repo](https://github.com/ai-engineering-curriculum/agentic-systems-architect-solutions).
 
 ## Deliverables
 

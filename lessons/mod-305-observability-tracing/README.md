@@ -22,7 +22,7 @@ You cannot operate what you cannot see. A multi-agent system in production fails
 
 ## Exercises
 
-Hands-on practice. Reference solutions live in the paired [solutions repo](https://github.com/ai-infra-curriculum/ai-infra-agentic-systems-architect-solutions).
+Hands-on practice. Reference solutions live in the paired [solutions repo](https://github.com/ai-engineering-curriculum/agentic-systems-architect-solutions).
 
 - [exercise-01: OTel GenAI span design](exercises/exercise-01-otel-genai-span-design.md) — design and implement the span schema for a multi-agent run using GenAI semantic conventions.
 - [exercise-02: Quality and drift signals](exercises/exercise-02-quality-and-drift-signals.md) — define the non-APM signal taxonomy and wire faithfulness and drift detection into traces.

@@ -22,7 +22,7 @@ Every agent run is an argument with a finite resource: the context window. An ai
 
 ## Exercises
 
-Hands-on practice. Reference solutions live in the paired [solutions repo](https://github.com/ai-infra-curriculum/ai-infra-agentic-systems-architect-solutions).
+Hands-on practice. Reference solutions live in the paired [solutions repo](https://github.com/ai-engineering-curriculum/agentic-systems-architect-solutions).
 
 - [exercise-01: Context budget and rot analysis](exercises/exercise-01-context-budget-and-rot-analysis.md) — instrument a long-horizon run, build a token budget, and locate the rot.
 - [exercise-02: Memory-tier placement design](exercises/exercise-02-memory-tier-placement-design.md) — place every piece of agent state into a tier and defend the persistence boundaries.

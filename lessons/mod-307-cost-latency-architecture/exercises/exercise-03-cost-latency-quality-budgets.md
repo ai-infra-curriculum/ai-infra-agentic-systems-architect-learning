@@ -124,7 +124,7 @@ def guard(meter: Meter, b: Budget, tenant: str, task_spend: float) -> str:
     return "proceed"
 ```
 
-Worked budgets, the full SLA table, the governed-architecture diagram, and reference ADRs live in the [solutions repo](https://github.com/ai-infra-curriculum/ai-infra-agentic-systems-architect-solutions).
+Worked budgets, the full SLA table, the governed-architecture diagram, and reference ADRs live in the [solutions repo](https://github.com/ai-engineering-curriculum/agentic-systems-architect-solutions).
 
 ## Deliverables
 

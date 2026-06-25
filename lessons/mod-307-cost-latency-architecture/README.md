@@ -24,7 +24,7 @@ This module makes cost and latency first-class architectural concerns. You will 
 
 ## Exercises
 
-Hands-on design practice. Reference solutions live in the paired [solutions repo](https://github.com/ai-infra-curriculum/ai-infra-agentic-systems-architect-solutions).
+Hands-on design practice. Reference solutions live in the paired [solutions repo](https://github.com/ai-engineering-curriculum/agentic-systems-architect-solutions).
 
 - [exercise-01: Token economics cost model](exercises/exercise-01-token-economics-cost-model.md) — build a per-task and per-tenant cost model for a fan-out system and derive its value threshold.
 - [exercise-02: Caching and routing architecture](exercises/exercise-02-caching-and-routing-architecture.md) — design the caching and routing layers, quantify the multipliers, and diagram the routed architecture.

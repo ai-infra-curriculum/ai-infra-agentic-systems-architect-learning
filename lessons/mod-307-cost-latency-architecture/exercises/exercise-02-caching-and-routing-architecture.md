@@ -119,7 +119,7 @@ batchable_call_cost = 0.0   # baseline $ of latency-tolerant calls
 print("report per-lever savings and the stacked before/after here")
 ```
 
-Worked diagrams, the filled routing table, and the confirmed cache numbers live in the [solutions repo](https://github.com/ai-infra-curriculum/ai-infra-agentic-systems-architect-solutions).
+Worked diagrams, the filled routing table, and the confirmed cache numbers live in the [solutions repo](https://github.com/ai-engineering-curriculum/agentic-systems-architect-solutions).
 
 ## Deliverables
 

@@ -24,7 +24,7 @@ This module establishes the design vocabulary and the decision discipline for ev
 
 ## Exercises
 
-Hands-on design practice. Reference solutions live in the paired [solutions repo](https://github.com/ai-infra-curriculum/ai-infra-agentic-systems-architect-solutions).
+Hands-on design practice. Reference solutions live in the paired [solutions repo](https://github.com/ai-engineering-curriculum/agentic-systems-architect-solutions).
 
 - [exercise-01: Workflows vs. agents decision matrix](exercises/exercise-01-workflows-vs-agents-decision-matrix.md) — build and defend a reusable decision matrix across five candidate systems.
 - [exercise-02: Orchestration pattern catalog](exercises/exercise-02-orchestration-pattern-catalog.md) — map real tasks to the five patterns and document the tradeoffs.

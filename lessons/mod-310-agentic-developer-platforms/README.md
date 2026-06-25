@@ -26,7 +26,7 @@ The central claim of the module: **an agentic platform is a host-independent arc
 
 ## Exercises
 
-Hands-on architecture practice — mapping tables, integration contracts, threat models, portability grades, and real config, not framework wiring. Reference solutions live in the paired [solutions repo](https://github.com/ai-infra-curriculum/ai-infra-agentic-systems-architect-solutions).
+Hands-on architecture practice — mapping tables, integration contracts, threat models, portability grades, and real config, not framework wiring. Reference solutions live in the paired [solutions repo](https://github.com/ai-engineering-curriculum/agentic-systems-architect-solutions).
 
 | Exercise | Focus | Effort |
 | --- | --- | --- |
@@ -42,7 +42,7 @@ Hands-on architecture practice — mapping tables, integration contracts, threat
 
 ## Prerequisites
 
-This module sits at L48 in the **Agentic Systems Architect** track and builds directly on the **L30 [agentic-ai-engineer](https://github.com/ai-infra-curriculum/ai-infra-agentic-ai-engineer-learning) track**, which teaches the *mechanics* this module designs above:
+This module sits at L48 in the **Agentic Systems Architect** track and builds directly on the **L30 [agentic-ai-engineer](https://github.com/ai-engineering-curriculum/agentic-ai-engineer-learning) track**, which teaches the *mechanics* this module designs above:
 
 - **L30 agentic-ai-engineer** — building an MCP server, writing a hook, defining a tool, wiring a subagent on a concrete host. This module assumes you can do all of that and stays at the design altitude.
 - [mod-301: Agentic Systems Foundations](../mod-301-agentic-systems-foundations/README.md) — workflow-vs-agent judgment and orchestration patterns.

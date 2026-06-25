@@ -30,7 +30,7 @@ This module pitches up from *building* compliant features to *architecting* a go
 
 ## Exercises
 
-Hands-on architecture and specification practice — control maps, comparison tables, lifecycle designs, and specs, not framework wiring. Reference solutions live in the paired [solutions repo](https://github.com/ai-infra-curriculum/ai-infra-agentic-systems-architect-solutions).
+Hands-on architecture and specification practice — control maps, comparison tables, lifecycle designs, and specs, not framework wiring. Reference solutions live in the paired [solutions repo](https://github.com/ai-engineering-curriculum/agentic-systems-architect-solutions).
 
 | # | Exercise | Deliverable |
 | --- | --- | --- |
@@ -46,7 +46,7 @@ Hands-on architecture and specification practice — control maps, comparison ta
 
 ## Prerequisites
 
-This is the **architect** rung. It assumes you can already build agents, tools, and RAG pipelines — those skills are owned by the lower [Senior Agentic AI Engineer](https://github.com/ai-infra-curriculum/ai-infra-agentic-ai-engineer-learning) (L30) track and are linked, not re-taught. Here you decide *whether, where, and how* governance belongs in a production architecture.
+This is the **architect** rung. It assumes you can already build agents, tools, and RAG pipelines — those skills are owned by the lower [Senior Agentic AI Engineer](https://github.com/ai-engineering-curriculum/agentic-ai-engineer-learning) (L30) track and are linked, not re-taught. Here you decide *whether, where, and how* governance belongs in a production architecture.
 
 Within this track:
 

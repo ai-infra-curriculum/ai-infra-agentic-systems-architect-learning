@@ -65,7 +65,7 @@ Multi-module capstones that integrate the spine into end-to-end architecture del
 
 This is the **architect** rung. It assumes build-level mastery of agentic systems — agent loops, framework mechanics, tool use, and RAG implementation — which are owned by the lower rung:
 
-- **[Senior Agentic AI Engineer](https://github.com/ai-infra-curriculum/ai-infra-senior-agentic-ai-engineer-learning)** (L40) — the recommended on-ramp.
+- **[Senior Agentic AI Engineer](https://github.com/ai-engineering-curriculum/senior-agentic-ai-engineer-learning)** (L40) — the recommended on-ramp.
 
 You should be able to *build* a multi-tool agent and a working RAG pipeline before starting; here you decide *whether, where, and how* those pieces belong in a production architecture. See [PREREQUISITES.md](./PREREQUISITES.md) for the full role-level entry-skill checklist.
 
@@ -75,7 +75,7 @@ You should be able to *build* a multi-tool agent and a working RAG pipeline befo
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/ai-infra-curriculum/ai-infra-agentic-systems-architect-learning.git
+git clone https://github.com/ai-engineering-curriculum/agentic-systems-architect-learning.git
 cd ai-infra-agentic-systems-architect-learning
 
 # 2. Confirm you meet the entry skills
@@ -140,7 +140,7 @@ Design extensible agent-platform architectures using a generic extension model (
 
 Reference implementations and worked architecture deliverables live in the paired solutions repository:
 
-- [`ai-infra-agentic-systems-architect-solutions`](https://github.com/ai-infra-curriculum/ai-infra-agentic-systems-architect-solutions)
+- [`ai-infra-agentic-systems-architect-solutions`](https://github.com/ai-engineering-curriculum/agentic-systems-architect-solutions)
 
 ---
 

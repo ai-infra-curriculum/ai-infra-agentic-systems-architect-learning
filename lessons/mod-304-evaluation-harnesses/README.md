@@ -24,7 +24,7 @@ This module treats evaluation as a **deployment gate**, not an afterthought. You
 
 ## Exercises
 
-Hands-on practice. Reference solutions live in the paired [solutions repo](https://github.com/ai-infra-curriculum/ai-infra-agentic-systems-architect-solutions).
+Hands-on practice. Reference solutions live in the paired [solutions repo](https://github.com/ai-engineering-curriculum/agentic-systems-architect-solutions).
 
 - [exercise-01: Design a trajectory eval](exercises/exercise-01-trajectory-eval-design.md) — specify a trajectory-vs-final-state dataset and scorer for a multi-step agent.
 - [exercise-02: Build a tool-call correctness harness](exercises/exercise-02-tool-call-correctness-harness.md) — selection and argument checks, deterministic plus LLM-judge.

@@ -24,7 +24,7 @@ The central tension you will return to throughout the module: a multi-agent syst
 
 ## Exercises
 
-Hands-on architecture practice — diagrams, decision matrices, and specs, not framework wiring. Reference solutions live in the paired [solutions repo](https://github.com/ai-infra-curriculum/ai-infra-agentic-systems-architect-solutions).
+Hands-on architecture practice — diagrams, decision matrices, and specs, not framework wiring. Reference solutions live in the paired [solutions repo](https://github.com/ai-engineering-curriculum/agentic-systems-architect-solutions).
 
 - [exercise-01: Orchestrator-worker topology design](exercises/exercise-01-orchestrator-worker-topology-design.md) — draw a topology for a real workload and defend its token budget.
 - [exercise-02: Handoffs vs. manager-as-tools](exercises/exercise-02-handoffs-vs-manager-as-tools.md) — pick a delegation model and assign answer ownership.
